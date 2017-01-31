@@ -14,6 +14,9 @@ if (!isDedicated) then {
 	PlotNearbyHumans 	= compile preprocessFileLineNumbers "plotManagement\plotNearbyHumans.sqf";
 	PlotAddFriend 		= compile preprocessFileLineNumbers "plotManagement\plotAddFriend.sqf";
 	PlotRemoveFriend 	= compile preprocessFileLineNumbers "plotManagement\plotRemoveFriend.sqf";
+	MaintainPlot    	= compile preprocessFileLineNumbers "plotManagement\maintain_areaSC.sqf";
+	PlotPreview    		= compile preprocessFileLineNumbers "plotManagement\plotToggleMarkers.sqf";
+	PlotObjects         = compile preprocessFileLineNumbers "plotManagement\plotObjects.sqf"; // NEW
 	/*Plot End*/
 
 	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
