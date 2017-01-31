@@ -180,15 +180,32 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 	_player_lockUnlock_crtl = false;
 
 	if (_canDo && (speed player <= 1) && (_cursorTarget isKindOf "Plastic_Pole_EP1_DZ")) then {
+		if (s_player_plotManagement < 0) then {
+		_adminList = ["0152"]; // Add admins here if you admins to able to manage all plotpoles
+		_owner = _cursorTarget getVariable ["CharacterID","0"];
+		_friends = _cursorTarget getVariable ["plotfriends", []];
+		_fuid = [];
+		{
+		_friendUID = _x select 0;
+		_fuid = _fuid + [_friendUID];
+		} forEach _friends;
+		_allowed = [_owner];    
+		_allowed = [_owner] + _adminList + _fuid;
+		if(_owner == dayz_characterID || (getPlayerUID player) in _allowed)then{            
+		s_player_plotManagement = player addAction ["<t color='#0059FF'>Manage Plot</t>", "plotManagement\initPlotManagement.sqf", [], 5, false];
+		};
+	};
 		 if (s_player_maintain_area < 0) then {
 		  	s_player_maintain_area = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTAREA"], "ZSC\compiles\maintain_area.sqf", "maintain", 5, false];
 		 	s_player_maintain_area_preview = player addAction [format["<t color='#ff0000'>%1</t>",localize "STR_EPOCH_ACTIONS_MAINTPREV"], "ZSC\compiles\maintain_area.sqf", "preview", 5, false];
 		 };
 	} else {
-    		player removeAction s_player_maintain_area;
-    		s_player_maintain_area = -1;
-    		player removeAction s_player_maintain_area_preview;
-    		s_player_maintain_area_preview = -1;
+		player removeAction s_player_plotManagement;
+		s_player_plotManagement = -1;
+    	player removeAction s_player_maintain_area;
+    	s_player_maintain_area = -1;
+    	player removeAction s_player_maintain_area_preview;
+    	s_player_maintain_area_preview = -1;
 	};
 
 	if(_isAlive) then {
@@ -199,17 +216,60 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 			};
 		};
 
-        if(_isModular && (dayz_characterID == _ownerID)) then {
+///Allow owners to delete modulars
+    if(_isModular) then {
             if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
-                _player_deleteBuild = true;
+				_findNearestPoles = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], DZE_PlotPole select 0];
+				_IsNearPlot = count (_findNearestPoles);
+				_fuid  = [];
+				_allowed = [];
+				if(_IsNearPlot > 0)then{
+					_thePlot = _findNearestPoles select 0;
+					_owner =  _thePlot getVariable ["ownerPUID","010"];
+					_friends = _thePlot getVariable ["plotfriends", []];
+					{
+					  _friendUID = _x select 0;
+					  _fuid  =  _fuid  + [_friendUID];
+					} forEach _friends;
+					_allowed = [_owner];    
+					_allowed = [_owner] +  _fuid;	
+					if ( _playerUID in _allowed && _ownerID in _allowed ) then {  // // If u want that the object also belongs to someone on the plotpole.
+						_player_deleteBuild = true;
+					};					
+				}else{
+					if(_ownerID == _playerUID)then{
+						_player_deleteBuild = true;
+					};
+				};						                  
             };
-        };
-				
-		if(_isModularDoor && (dayz_characterID == _ownerID)) then {
-            if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {
-                _player_deleteBuild = true;
-            };		
-		};	
+    };
+	//Allow owners to delete modular doors without locks
+    if(_isModularDoor) then {
+            if(_hasToolbox && "ItemCrowbar" in _itemsPlayer) then {			
+				_findNearestPoles = nearestObjects[player, ["Plastic_Pole_EP1_DZ"], DZE_PlotPole select 0];
+				_IsNearPlot = count (_findNearestPoles);
+				_fuid  = [];
+				_allowed = [];
+				if(_IsNearPlot > 0)then{
+					_thePlot = _findNearestPoles select 0;
+					_owner =  _thePlot getVariable ["ownerPUID","010"];
+					_friends = _thePlot getVariable ["plotfriends", []];
+					{
+					  _friendUID = _x select 0;
+					  _fuid  =  _fuid  + [_friendUID];
+					} forEach _friends;
+					_allowed = [_owner];    
+					_allowed = [_owner] +  _fuid;	
+					if ( _playerUID in _allowed && _ownerID in _allowed) then { //  // If u want that the object also belongs to someone on the plotpole.
+						_player_deleteBuild = true;
+					};					
+				}else{
+					if(_ownerID == _playerUID)then{
+						_player_deleteBuild = true;
+					};
+				};								
+            };      
+    };	
 
 		if(_isVehicle) then {
 			
@@ -601,7 +661,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		};
 		if (s_player_upgrade_build < 0) then {
 			s_player_lastTarget set [0,_cursorTarget];
-			s_player_upgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_UPGRADE",_text], "custom\BuildVectors\action\player_upgrade.sqf",_cursorTarget, -1, false, true, "",""];
+			s_player_upgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_UPGRADE",_text], "plotManagement\player_upgrade.sqf",_cursorTarget, -1, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_upgrade_build;
@@ -617,7 +677,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 		};
 		if (s_player_downgrade_build < 0) then {
 			s_player_lastTarget set [1,_cursorTarget];
-			s_player_downgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_REMLOCK",_text], "custom\BuildVectors\action\player_buildingDowngrade.sqf",_cursorTarget, -2, false, true, "",""];
+			s_player_downgrade_build = player addAction [format[localize "STR_EPOCH_ACTIONS_REMLOCK",_text], "plotManagement\player_buildingDowngrade.sqf",_cursorTarget, -2, false, true, "",""];
 		};
 	} else {
 		player removeAction s_player_downgrade_build;
@@ -784,6 +844,8 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 
 } else {
 
+	player removeAction s_player_plotManagement;
+	s_player_plotManagement = -1;
 	{dayz_myCursorTarget removeAction _x} count s_player_repairActions;s_player_repairActions = [];
 	s_player_repair_crtl = -1;
 	{player removeAction _x} count s_player_combi;s_player_combi = [];

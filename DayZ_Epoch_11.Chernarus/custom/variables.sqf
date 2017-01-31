@@ -227,6 +227,7 @@ Dayz_GUI_B = 0.26; // -0.26
 
 //Player self-action handles
 dayz_resetSelfActions = {
+	s_player_plotManagement = -1;
 	s_player_fire =			-1;
 	s_player_cook =			-1;
 	s_player_boil =			-1;
@@ -564,7 +565,7 @@ if(isNil "DZE_HeliLift") then {
 	DZE_HeliLift = true;
 };
 if(isNil "DZE_DamageBeforeMaint") then {
-	DZE_DamageBeforeMaint = 0.09;
+    DZE_DamageBeforeMaint = 0.1; //or 0 to get maintain option all time.
 };
 if(isNil "DZE_StaticConstructionCount") then {
 	DZE_StaticConstructionCount = 0;

@@ -182,5 +182,7 @@ class RscTitles
 #include "custom\snap_pro\snappoints.hpp"
 #include "zupa\skins\defines.hpp"
 #include "zupa\skins\SkinGui.hpp"
+#include "plotManagement\defines.hpp"
+#include "plotManagement\plotManagement.hpp"
 #include "admintools\tools\Currency\currency_dialog.hpp"
 #include "admintools\dialog.hpp"
