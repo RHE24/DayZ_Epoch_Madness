@@ -10,7 +10,7 @@ if(isNil "storageList") then {storageList = [];};
 if(isNil "buildableObjectsList") then {buildableObjectsList = [];};
 if(isNil "crashList") then {crashList = [];};
 if(isNil "storageObjects") then {storageObjects = ["TentStorage","TentStorageDomed","TentStorageDomed2","VaultStorageLocked","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","StorageShed_DZ","LockboxStorageLocked","GunRack_DZ","WoodCrate_DZ"];};
-if(isNil "buildableObjects") then {buildableObjects = (dayz_allowedObjects - storageObjects) - ["LightPole_DZ","Plastic_Pole_EP1_DZ","Generator_DZ","TrapBear","ParkBench_DZ"];};
+if(isNil "buildableObjects") then {buildableObjects = (DayZ_SafeObjects - storageObjects) - ["LightPole_DZ","Plastic_Pole_EP1_DZ","Generator_DZ","TrapBear","ParkBench_DZ"];};
 
 if (!("ItemGPS" in items player)) then {player addweapon "ItemGPS";};
 if(isNil "enhancedESP2") then {enhancedESP2 = true;} else {enhancedESP2 = !enhancedESP2};
@@ -92,9 +92,9 @@ CrashesMarkerColor="ColorBrown";
 //GLOBAL VARS END
 
 
-N5_KEY = 
+F5Menu = 
 {
-	N5_KEYOptionMenu = 
+	F5OptionMenu = 
 	[
 		["",true],
 		["Toggle options:(current state)", [-1], "", -5, [["expression", ""]], "1", "0"],
@@ -108,7 +108,7 @@ N5_KEY =
 		[format["Show Locked Vehicles: %1",AddLockedVehiclesToMap], [8], "", -5, [["expression", "AddLockedVehiclesToMap = !AddLockedVehiclesToMap;changed = true;"]], "1", "1"],
 		[format["Show Unlocked Vehicles: %1",AddUnlockedVehiclesToMap], [8], "", -5, [["expression", "AddUnlockedVehiclesToMap = !AddUnlockedVehiclesToMap;changed = true;"]], "1", "1"]
 	];
-	showCommandingMenu "#USER:N5_KEYOptionMenu";
+	showCommandingMenu "#USER:F5OptionMenu";
 };
 
 if(enhancedESP2) then { 
