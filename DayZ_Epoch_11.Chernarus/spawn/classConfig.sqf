@@ -76,30 +76,30 @@ Bandit, Random Hero, etc. You can make every class a random class if you want to
 Then replace all occurrences of "Item1","Item2","Item3","Item4" with SHORT_HAND_NAME as I did with the VIP_ITEMS example below.
 
 */
-#define VIP_ITEMS "ItemAntibiotic","ItemBloodbag","ItemMorphine" // constant example, these can be removed if they are not used below
-#define VIP_TOOLS "Binocular_Vector","NVGoggles","ItemCompass","ItemKnife","ItemKeyKit","ItemEtool","ItemWatch","ItemGPS","ItemCrowbar","ItemRadio"
+#define VIP_ITEMS "ItemAntibiotic","ItemBloodbag","ItemEpinephrine","ItemMorphine" // constant example, these can be removed if they are not used below
+#define VIP_TOOLS "Binocular_Vector","NVGoggles","ItemCompass","ItemHatchet","ItemKnife","Itemmatchbox","Itemetool","ItemSledge","ItemWatch","ItemGPS","ItemCrowbar"
 
 _currencyVariable = "cashMoney"; // Coins variable name
 _startBag = "DZ_Patrol_Pack_EP1"; // Use "" for none
-_startMags = ["ItemBandage",4,"ItemPainkiller","ItemWaterbottle","FoodRabbitCooked","15Rnd_9x19_M9SD"];
-_startWeps = ["ItemMap","ItemFlashlight","ItemToolbox","M9SD"];
+_startMags = ["ItemBandage",3,"ItemPainkiller","ItemWaterbottle","FoodPistachio","17Rnd_9x19_glock17",3];
+_startWeps = ["ItemMap","ItemFlashlight","ItemToolbox","glock17_EP1"];
 _customLoadout = [
 	"76561197987495141", // ebay
 	"0",
 	"0"
 ];
 _customLoadouts = [
-	["Mike's Loadout","Sniper1_DZ","BanditW2_DZ",["10Rnd_127x99_m107",4,"15Rnd_9x19_M9SD",3,VIP_ITEMS],["PMC_AS50_TWS",VIP_TOOLS],"DZ_LargeGunBag_EP1",["Itemmatchbox","10Rnd_127x99_m107",4],["m107_TWS_EP1"],3,1000,1500000],
+	["Mike's Loadout","GUE_Soldier_2_DZ","BanditW2_DZ",["100Rnd_762x51_M240",2,"30Rnd_9x19_UZI_SD",3,"Skin_GUE_Soldier_Sniper_DZ",VIP_ITEMS],["Mk_48_DZ","UZI_SD_EP1",VIP_TOOLS],"DZ_Backpack_EP1",["5Rnd_86x70_L115A1",3],["BAF_LRR_scoped_W"],0],
 	[],
 	[]
 ];
 
 _classLevel1 = ["76561197987495141","0","0"];
-_classLevel2 = ["76561197987495141","0","0"];
-_classLevel3 = ["76561197987495141","0","0"];
+_classLevel2 = ["0","0","0"];
+_classLevel3 = ["0","0","0"];
 // To give higher level VIPs access to lower level VIP classes uncomment the two lines below:
 _classLevel1 = _classLevel1 + _classLevel2 + _classLevel3;
-_classLevel2 = _classLevel2 + _classLevel3;
+// _classLevel2 = _classLevel2 + _classLevel3;
 
 _publicClasses = [
 	[

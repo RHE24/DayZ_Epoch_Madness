@@ -15,7 +15,7 @@ dayz_previousID = 0;
 //disable greeting menu 
 player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
-enableRadio true;
+enableRadio false;
 // May prevent "how are you civillian?" messages from NPC
 enableSentences true;
 
@@ -24,8 +24,13 @@ spawnShoremode = 0; // Default = 1 (on shore)
 dayz_paraSpawn = false;
 spawnArea= 1500; // Default = 1500
 
+<<<<<<< HEAD
 MaxVehicleLimit = 1000; // Default = 50
 MaxDynamicDebris = 300; // Default = 100
+=======
+MaxVehicleLimit = 300; // Default = 50
+MaxDynamicDebris = 100; // Default = 100
+>>>>>>> parent of 9823c83... Updates reconfiguring
 dayz_MapArea = 14000; // Default = 10000
 dayz_maxLocalZombies = 30; // Default = 30 
 
@@ -35,6 +40,7 @@ DZE_SelfTransfuse = true; // default value //allow self transufe
 DZE_StaticConstructionCount = 1; //reduce time to build only 1 step
 DZE_PlayerZed = false; //remove player chance to spawn as zed.
 DZE_R3F_WEIGHT = false; //Disable weight system
+<<<<<<< HEAD
 DZE_vehicleAmmo = 1;
 DZE_DeathMsgGlobal = true;
 DZE_DeathMsgTitleText = true;
@@ -43,15 +49,23 @@ DZE_ForceNameTagsOff = false;
 DZE_ForceNameTagsInTrader = false;
 
 
+=======
+>>>>>>> parent of 9823c83... Updates reconfiguring
 
 dayz_sellDistance_vehicle = 20;
 dayz_sellDistance_boat = 30;
 dayz_sellDistance_air = 40;
 
 dayz_maxAnimals = 5; // Default: 8
+<<<<<<< HEAD
 dayz_tameDogs = false;
 DynamicVehicleDamageLow = 15; // Default: 0
 DynamicVehicleDamageHigh = 80; // Default: 100
+=======
+dayz_tameDogs = true;
+DynamicVehicleDamageLow = 0; // Default: 0
+DynamicVehicleDamageHigh = 100; // Default: 100
+>>>>>>> parent of 9823c83... Updates reconfiguring
 
 DZE_BuildOnRoads = false; // Default: False
 DZE_noRotate = []; //Objects that cannot be rotated. Ex: DZE_noRotate = ["ItemVault"] (NOTE: The objects magazine classname)

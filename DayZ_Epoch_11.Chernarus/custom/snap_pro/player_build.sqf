@@ -68,6 +68,7 @@ DZE_Z_ctrl = false;
 DZE_5 = false;
 DZE_4 = false;
 DZE_6 = false;
+DZE_F = false;
 
 DZE_cancelBuilding = false;
 

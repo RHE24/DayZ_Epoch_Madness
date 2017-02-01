@@ -92,9 +92,9 @@ CrashesMarkerColor="ColorBrown";
 //GLOBAL VARS END
 
 
-F5Menu = 
+N5_KEY = 
 {
-	F5OptionMenu = 
+	N5_KEYOptionMenu = 
 	[
 		["",true],
 		["Toggle options:(current state)", [-1], "", -5, [["expression", ""]], "1", "0"],
@@ -108,7 +108,7 @@ F5Menu =
 		[format["Show Locked Vehicles: %1",AddLockedVehiclesToMap], [8], "", -5, [["expression", "AddLockedVehiclesToMap = !AddLockedVehiclesToMap;changed = true;"]], "1", "1"],
 		[format["Show Unlocked Vehicles: %1",AddUnlockedVehiclesToMap], [8], "", -5, [["expression", "AddUnlockedVehiclesToMap = !AddUnlockedVehiclesToMap;changed = true;"]], "1", "1"]
 	];
-	showCommandingMenu "#USER:F5OptionMenu";
+	showCommandingMenu "#USER:N5_KEYOptionMenu";
 };
 
 if(enhancedESP2) then { 
