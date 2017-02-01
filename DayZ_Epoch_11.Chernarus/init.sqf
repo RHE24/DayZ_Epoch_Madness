@@ -72,7 +72,7 @@ call compile preprocessFileLineNumbers "ZSC\gold\ZSCinit.sqf";
 /*ZSC*/		
 call compile preprocessFileLineNumbers "logistic\init.sqf";	
 progressLoadingScreen 0.5;
-call compile preprocessFileLineNumbers "server_traders_cherno_11.sqf";				//Compile trader configs
+call compile preprocessFileLineNumbers "server_traders.sqf";				//Compile trader configs
 call compile preprocessFileLineNumbers "admintools\config.sqf"; // Epoch admin Tools config file
 call compile preprocessFileLineNumbers "admintools\variables.sqf"; // Epoch admin Tools variables
 progressLoadingScreen 1.0;
