@@ -137,14 +137,14 @@
 		The help queue can be viewed via the admin menu.
 		The player can NOT spam the admins.
 	*/
-	EAT_AllowContactAdmin = true;
+	EAT_AllowContactAdmin = false;
 
 		/*
 			Stops spamming of the contact admin. If it is enabled and a user contacts an admin
 			the given number of times they will get a white screen for EAT_blindTime seconds and 
 			the contact feature will be disabled
 		*/
-		EAT_enableAntiSpam = true;
+		EAT_enableAntiSpam = false;
 		EAT_antiSpamLimit = 15; // default 15 contacts
 		EAT_blindTime = 30; // default 30 seconds
 		

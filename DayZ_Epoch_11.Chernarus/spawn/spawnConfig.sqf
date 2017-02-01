@@ -30,28 +30,28 @@ element in the array.
 
 */
 
-_bodyCheck = 1500; // If a player has a body within this distance of a spawn that spawn will be blocked. Set to -1 to disable.
-_mapRadius = 15000; // Distance from center to farthest edge of map. Only used when spawnNearPlot is enabled.
-_spawnNearGroup = true; // Allow players to spawn near their group. Blocked if the player has a body within bodyCheck distance of the leader. Requires DZGM to work.
-_spawnNearPlot = true; // Allow players to spawn near their plot. Blocked if the player has a body within bodyCheck distance of their plot. Requires Plot4Life to work. 
-_spawnRadius = 1000; // Distance around spawn to find a safe pos. Lower is closer to exact coordinates. Do not set too low or BIS_fnc_findSafePos may fail.
+_bodyCheck = 4000; // If a player has a body within this distance of a spawn that spawn will be blocked. Set to -1 to disable.
+_mapRadius = 12000; // Distance from center to farthest edge of map. Only used when spawnNearPlot is enabled.
+_spawnNearGroup = false; // Allow players to spawn near their group. Blocked if the player has a body within bodyCheck distance of the leader. Requires DZGM to work.
+_spawnNearPlot = false; // Allow players to spawn near their plot. Blocked if the player has a body within bodyCheck distance of their plot. Requires Plot4Life to work. 
+_spawnRadius = 800; // Distance around spawn to find a safe pos. Lower is closer to exact coordinates. Do not set too low or BIS_fnc_findSafePos may fail.
 _customBase = [
 	"76561197987495141", // ebay
 	"0",
 	"0"
 ];
 _customBases = [ // Do not use a z (height) higher than _autoOpenHeight in haloConfig.sqf if using halo
-	["Mike's base",[2324,15365,0]],
+	["ebay's base",[2324,15365,0]],
 	[],
 	[]
 ];
 
 _spawnLevel1 = ["76561197987495141","0","0"];
-_spawnLevel2 = ["76561197987495141","0","0"];
-_spawnLevel3 = ["76561197987495141","0","0"];
+_spawnLevel2 = ["0","0","0"];
+_spawnLevel3 = ["0","0","0"];
 // To give higher level VIPs access to lower level VIP spawns uncomment the two lines below:
 _spawnLevel1 = _spawnLevel1 + _spawnLevel2 + _spawnLevel3;
-_spawnLevel2 = _spawnLevel2 + _spawnLevel3;
+// _spawnLevel2 = _spawnLevel2 + _spawnLevel3;
 
 _spawnPoints = switch (toLower worldName) do {
 	case "chernarus":{
