@@ -17,15 +17,15 @@ player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
 enableRadio true;
 // May prevent "how are you civillian?" messages from NPC
-enableSentences false;
+enableSentences true;
 
 // DayZ Epoch config
 spawnShoremode = 0; // Default = 1 (on shore)
 dayz_paraSpawn = false;
 spawnArea= 1500; // Default = 1500
 
-MaxVehicleLimit = 500; // Default = 50
-MaxDynamicDebris = 150; // Default = 100
+MaxVehicleLimit = 1000; // Default = 50
+MaxDynamicDebris = 300; // Default = 100
 dayz_MapArea = 14000; // Default = 10000
 dayz_maxLocalZombies = 30; // Default = 30 
 
@@ -39,8 +39,8 @@ DZE_vehicleAmmo = 1;
 DZE_DeathMsgGlobal = true;
 DZE_DeathMsgTitleText = true;
 DZE_ForceNameTags = false;
-DZE_ForceNameTagsOff = true;
-DZE_ForceNameTagsInTrader = true;
+DZE_ForceNameTagsOff = false;
+DZE_ForceNameTagsInTrader = false;
 
 
 
@@ -50,8 +50,8 @@ dayz_sellDistance_air = 40;
 
 dayz_maxAnimals = 5; // Default: 8
 dayz_tameDogs = false;
-DynamicVehicleDamageLow = 0; // Default: 0
-DynamicVehicleDamageHigh = 100; // Default: 100
+DynamicVehicleDamageLow = 15; // Default: 0
+DynamicVehicleDamageHigh = 80; // Default: 100
 
 DZE_BuildOnRoads = false; // Default: False
 DZE_noRotate = []; //Objects that cannot be rotated. Ex: DZE_noRotate = ["ItemVault"] (NOTE: The objects magazine classname)
@@ -80,7 +80,7 @@ call compile preprocessFileLineNumbers "ZSC\gold\ZSCinit.sqf";
 /*ZSC*/		
 call compile preprocessFileLineNumbers "logistic\init.sqf";	
 progressLoadingScreen 0.5;
-call compile preprocessFileLineNumbers "server_traders_cherno_11.sqf";				//Compile trader configs
+call compile preprocessFileLineNumbers "server_traders.sqf";				//Compile trader configs
 call compile preprocessFileLineNumbers "admintools\config.sqf"; // Epoch admin Tools config file
 call compile preprocessFileLineNumbers "admintools\variables.sqf"; // Epoch admin Tools variables
 progressLoadingScreen 1.0;
@@ -109,8 +109,8 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
-	execVM "dzgm\init.sqf";
 	execVM "spawn\start.sqf";
+	execVM "dzgm\init.sqf";
 	_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
 	
 	/// Epoch Admin Tools
