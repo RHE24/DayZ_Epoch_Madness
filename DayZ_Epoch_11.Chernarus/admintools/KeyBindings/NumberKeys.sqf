@@ -19,7 +19,7 @@
 // N2_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 3) then {[] execVM ""admintools\DIRECTORY_HERE\FILE_NAME_HERE.sqf"";true};"];
 // N3_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 4) then {[] execVM ""admintools\DIRECTORY_HERE\FILE_NAME_HERE.sqf"";true};"];
 // N4_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 5) then {[] execVM ""admintools\DIRECTORY_HERE\FILE_NAME_HERE.sqf"";true};"];
-N5_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 6) then {[] execVM ""admintools\tools\AdminMode\ESPenhanced.sqf"";true};"];
+// N5_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 6) then {[] execVM ""admintools\tools\AdminMode\ESPenhanced.sqf"";true};"];
 // N6_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 7) then {[] execVM ""admintools\DIRECTORY_HERE\FILE_NAME_HERE.sqf"";true};"];
 // N7_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 8) then {[] execVM ""admintools\DIRECTORY_HERE\FILE_NAME_HERE.sqf"";true};"];
 // N8_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 9) then {[] execVM ""admintools\DIRECTORY_HERE\FILE_NAME_HERE.sqf"";true};"];

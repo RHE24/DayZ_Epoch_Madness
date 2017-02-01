@@ -189,7 +189,7 @@ boil_tin_cans = [
 dayz_combination = "";
 dayz_humanitytarget = "";
 dayz_combatLog = "";
-vkc_ownerID	= "";
+vkc_ownerid	= "";
 canRoll = true;
 
 canbuild = true;

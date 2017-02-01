@@ -19,16 +19,6 @@ class Category_647 {
 		buy[] ={200,"Coins"};
 		sell[] ={100,"Coins"};
 	};
-	class 10Rnd_127x99_m107 {
-		type = "trade_items";
-		buy[] ={100000,"Coins"};
-		sell[] ={50000,"Coins"};
-	};
-	class 5Rnd_127x99_as50 {
-		type = "trade_items";
-		buy[] ={100000,"Coins"};
-		sell[] ={50000,"Coins"};
-	};
 };
 class Category_614 {
 	class 20Rnd_762x51_DMR {
@@ -50,15 +40,5 @@ class Category_614 {
 		type = "trade_items";
 		buy[] ={200,"Coins"};
 		sell[] ={100,"Coins"};
-	};
-	class 10Rnd_127x99_m107 {
-		type = "trade_items";
-		buy[] ={100000,"Coins"};
-		sell[] ={50000,"Coins"};
-	};
-	class 5Rnd_127x99_as50 {
-		type = "trade_items";
-		buy[] ={100000,"Coins"};
-		sell[] ={50000,"Coins"};
 	};
 };

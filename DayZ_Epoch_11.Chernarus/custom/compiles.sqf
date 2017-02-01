@@ -35,7 +35,7 @@ if (!isDedicated) then {
 	player_dumpBackpack = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_dumpBackpack.sqf";
 	building_spawnLoot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnLoot.sqf";
 	building_spawnZombies =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnZombies.sqf";
-	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "custom\snap_pro\dayz_spaceInterrupt.sqf";
+	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "custom\dayz_spaceInterrupt.sqf";
 	player_fired =					compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre && audial rating
 	player_harvest =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_harvest.sqf";
 	player_packTent =				compile preprocessFileLineNumbers "ZSC\compiles\player_packTent.sqf";
