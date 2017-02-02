@@ -59,4 +59,9 @@ class Category_478 {
 		buy[] ={100000,"Coins"};
 		sell[] ={50000,"Coins"};
 	};
+	class 5Rnd_127x108_KSVK {
+		type = "trade_items";
+		buy[] ={100000,"Coins"};
+		sell[] ={50000,"Coins"};
+	};
 };

@@ -181,7 +181,7 @@ if (!isNull cursorTarget && !_inVehicle && !_isPZombie && (player distance curso
 
 	if (_canDo && (speed player <= 1) && (_cursorTarget isKindOf "Plastic_Pole_EP1_DZ")) then {
 		if (s_player_plotManagement < 0) then {
-		_adminList = ["0152"]; // Add admins here if you admins to able to manage all plotpoles
+		_adminList = ["76561197987495141"]; // Add admins here if you admins to able to manage all plotpoles
 		_owner = _cursorTarget getVariable ["CharacterID","0"];
 		_friends = _cursorTarget getVariable ["plotfriends", []];
 		_fuid = [];
