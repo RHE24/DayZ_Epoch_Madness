@@ -3,7 +3,6 @@
 */
 //Player only
 if (!isDedicated) then {
-
 	player_build = compile preprocessFileLineNumbers "custom\snap_pro\player_build.sqf";
 	snap_build = compile preprocessFileLineNumbers "custom\snap_pro\snap_build.sqf";
 	fnc_SetPitchBankYaw =  compile preprocessFileLineNumbers "custom\BuildVectors\fnc_SetPitchBankYaw.sqf";
@@ -40,7 +39,7 @@ if (!isDedicated) then {
 	player_harvest =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_harvest.sqf";
 	player_packTent =				compile preprocessFileLineNumbers "ZSC\compiles\player_packTent.sqf";
 	player_packVault =				compile preprocessFileLineNumbers "ZSC\compiles\player_packVault.sqf";
-	player_unlockVault =			compile preprocessFileLineNumbers "ZSC\compiles\player_unlockVault.sqf";
+	player_unlockVault =			compile preprocessFileLineNumbers "custom\BuildVectors\compile\player_unlockVault.sqf";
 
 	player_removeObject =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remove.sqf";
 	player_removeNearby =    		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_removeNearby.sqf";
@@ -65,7 +64,7 @@ if (!isDedicated) then {
 	player_unlockDoor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	player_changeCombo =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_changeCombo.sqf";
 
-	player_lockVault =			compile preprocessFileLineNumbers "ZSC\compiles\player_lockVault.sqf";
+	player_lockVault =			compile preprocessFileLineNumbers "custom\BuildVectors\compile\player_lockVault.sqf";
 	player_updateGui =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";
 	player_crossbowBolt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
 	player_music = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music

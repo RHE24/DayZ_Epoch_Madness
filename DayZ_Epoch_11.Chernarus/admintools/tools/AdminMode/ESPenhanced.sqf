@@ -92,9 +92,9 @@ CrashesMarkerColor="ColorBrown";
 //GLOBAL VARS END
 
 
-F5_KEY = 
+F5Menu = 
 {
-	F5_KEYOptionMenu = 
+	F5OptionMenu = 
 	[
 		["",true],
 		["Toggle options:(current state)", [-1], "", -5, [["expression", ""]], "1", "0"],
@@ -108,15 +108,15 @@ F5_KEY =
 		[format["Show Locked Vehicles: %1",AddLockedVehiclesToMap], [8], "", -5, [["expression", "AddLockedVehiclesToMap = !AddLockedVehiclesToMap;changed = true;"]], "1", "1"],
 		[format["Show Unlocked Vehicles: %1",AddUnlockedVehiclesToMap], [8], "", -5, [["expression", "AddUnlockedVehiclesToMap = !AddUnlockedVehiclesToMap;changed = true;"]], "1", "1"]
 	];
-	showCommandingMenu "#USER:F5_KEYOptionMenu";
+	showCommandingMenu "#USER:F5OptionMenu";
 };
 
 if(enhancedESP2) then { 
 	dList = []; //List of dead bodies
 	dListMarkers = []; //List of Dead player markers
-	KEY1 = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 2) then {call F5Menu;};"];
+	F5_KEY = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 63) then {call F5Menu;};"];
 	_player = player;
-	// Tool use logger
+// Tool use logger
 	if(EAT_logMajorTool) then {
 		EAT_PVEH_usageLogger = format["%1 %2 -- has ENABLED enhanced ESP",name _player,getPlayerUID _player];
 		[] spawn {publicVariable "EAT_PVEH_usageLogger";};

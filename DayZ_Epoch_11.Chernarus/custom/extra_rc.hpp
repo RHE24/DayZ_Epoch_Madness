@@ -8,5 +8,5 @@ class ExtraRc {
         		text = "Group Management";
         		script = "execVM 'dzgm\loadGroupManagement.sqf'";
      		};
-					};
-			};
+	};
+};

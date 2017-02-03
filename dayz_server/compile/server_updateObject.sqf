@@ -59,10 +59,10 @@ _needUpdate = _object in needUpdate_objects;
 _object_position = {
 	private["_position","_worldspace","_fuel","_key"];
 		_position = getPosATL _object;
-		_worldspace = [
-			round(direction _object),
-			_position
-		];
+		//Prescise Buidling edit
+		_worldspace = [getDir _object, _position] call AN_fnc_formatWorldspace;
+		//Old Edit
+		//_worldspace = [round(direction _object), _position];
 		_fuel = 0;
 		if (_object isKindOf "AllVehicles") then {
 			_fuel = fuel _object;
