@@ -7,7 +7,7 @@ CurrencyName = "Coins";
 ZSC_MoneyStorage = ["VaultStorage","LockboxStorage","StorageShed_DZ","OutHouse_DZ","Wooden_shed_DZ","WoodShack_DZ","GunRack_DZ","WoodCrate_DZ","TentStorage","TentStorageDomed","TentStorageDomed2"];
 
 // Multiplier how much money an object can hold. This number X ammount of magazines it can hold. ( so URAL -> 500 items * 1000 = 5 MIL cash).
-ZSC_MaxMoneyInStorageMultiplier = 10000;
+ZSC_MaxMoneyInStorageMultiplier = 100000;
 
 // (True = No Animation / False = Animation)
 InstantTrading = false; 

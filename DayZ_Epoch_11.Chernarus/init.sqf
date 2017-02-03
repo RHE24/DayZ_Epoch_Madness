@@ -50,6 +50,11 @@ DZE_noRotate = []; //Objects that cannot be rotated. Ex: DZE_noRotate = ["ItemVa
 DZE_vectorDegrees = [0.01, 0.1, 1, 5, 15, 45, 90];
 DZE_curDegree = 45; //Starting rotation angle. //Prefered any value in array above
 DZE_dirWithDegrees = true; //When rotating objects with Q&E, use the custom degrees
+ELE_MaxRange = 100; // maximum range the elevator can travel / stop points can be built (in meter)
+ELE_Speed = 5; // speed of the elevator (meters per second)
+ELE_StopWaitTime = 0; // disable the wait time if you call the elevator
+ELE_StopClass = "MetalFloor_Preview_DZ";
+
 
 /*ZSC*/
 DZE_ConfigTrader = true; 
@@ -72,7 +77,7 @@ call compile preprocessFileLineNumbers "ZSC\gold\ZSCinit.sqf";
 /*ZSC*/		
 call compile preprocessFileLineNumbers "logistic\init.sqf";	
 progressLoadingScreen 0.5;
-call compile preprocessFileLineNumbers "server_traders_cherno_11.sqf";				//Compile trader configs
+call compile preprocessFileLineNumbers "server_traders.sqf";				//Compile trader configs
 call compile preprocessFileLineNumbers "admintools\config.sqf"; // Epoch admin Tools config file
 call compile preprocessFileLineNumbers "admintools\variables.sqf"; // Epoch admin Tools variables
 progressLoadingScreen 1.0;
@@ -104,6 +109,7 @@ if (!isDedicated) then {
 	execVM "dzgm\init.sqf";
 	execVM "spawn\start.sqf";
 	_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
+	["elevator"] execVM "elevator\elevator_init.sqf";
 	
 	/// Epoch Admin Tools
 if ( !((getPlayerUID player) in EAT_adminList) && !((getPlayerUID player) in EAT_modList)) then 
@@ -116,9 +122,9 @@ if ( !((getPlayerUID player) in EAT_adminList) && !((getPlayerUID player) in EAT
 
 _nil = [] execVM "custom\remote\remote.sqf";
 _nil = [] execVM "DZAI_Client\dzai_initclient.sqf";
-	execVM "ZSC\compiles\playerHud.sqf";
- [] execVM "service_point\service_point.sqf";
- [] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
+		  execVM "ZSC\compiles\playerHud.sqf";
+ 	   [] execVM "service_point\service_point.sqf";
+ 	   [] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
 };
 
 //#include "\z\addons\dayz_code\system\REsec.sqf"
@@ -129,3 +135,4 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 [] execVM "admintools\Activate.sqf"; // Epoch admin tools
+call compile preprocessFileLineNumbers "addons\suicide\init.sqf"; //Custom Suicide script right click pistol

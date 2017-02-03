@@ -59,10 +59,10 @@ _needUpdate = _object in needUpdate_objects;
 _object_position = {
 	private["_position","_worldspace","_fuel","_key"];
 		_position = getPosATL _object;
-		_worldspace = [
-			round(direction _object),
-			_position
-		];
+		//Prescise Buidling edit
+		_worldspace = [getDir _object, _position] call AN_fnc_formatWorldspace;
+		//Old Edit
+		//_worldspace = [round(direction _object), _position];
 		_fuel = 0;
 		if (_object isKindOf "AllVehicles") then {
 			_fuel = fuel _object;
@@ -74,6 +74,9 @@ _object_position = {
 
 _object_inventory = {
 	private["_inventory","_previous","_key"];
+		if (typeOf (_object) == "Plastic_Pole_EP1_DZ") then{
+		_inventory = _object getVariable ["plotfriends", []]; //We're replacing the inventory with UIDs for this item
+	} else {
 		_inventory = [
 		getWeaponCargo _object,
 		getMagazineCargo _object,
@@ -81,7 +84,8 @@ _object_inventory = {
 		/*ZSC*/
 		_object getVariable["bankMoney",0]
 		/*ZSC*/
-	];
+		];
+	};
 		_previous = str(_object getVariable["lastInventory",[]]);
 		if (str(_inventory) != _previous) then {
 			_object setVariable["lastInventory",_inventory];
@@ -197,15 +201,18 @@ _object_vehicleKey = {
 	};
 	
 	/* Get the Inventory of the Vehicle */
-	_inventory = [
-		getWeaponCargo _object,
-		getMagazineCargo _object,
-		getBackpackCargo _object,
-		/*ZSC*/
-		_object getVariable["bankMoney",0]
-		/*ZSC*/
-	];
-	
+	if (typeOf (_object) == "Plastic_Pole_EP1_DZ") then{
+    _inventory = _object getVariable ["plotfriends", []]; //We're replacing the inventory with UIDs for this item
+	} else {
+    _inventory = [
+    getWeaponCargo _object,
+    getMagazineCargo _object,
+    getBackpackCargo _object,
+	/*ZSC*/
+	_object getVariable["bankMoney",0]
+	/*ZSC*/
+    ];
+};
 	/* Get the position of the Vehicle */
 	_position 	= getPosASL _object;
 	if !(surfaceIsWater _position) then {

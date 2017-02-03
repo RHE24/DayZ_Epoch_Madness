@@ -3,12 +3,20 @@
 */
 //Player only
 if (!isDedicated) then {
-
 	player_build = compile preprocessFileLineNumbers "custom\snap_pro\player_build.sqf";
 	snap_build = compile preprocessFileLineNumbers "custom\snap_pro\snap_build.sqf";
 	fnc_SetPitchBankYaw =  compile preprocessFileLineNumbers "custom\BuildVectors\fnc_SetPitchBankYaw.sqf";
 	DZE_build_vector_file = "custom\BuildVectors\build_vectors.sqf";
 	build_vectors =  compile preprocessFileLineNumbers DZE_build_vector_file;
+	/*Plot*/
+	PlotGetFriends 		= compile preprocessFileLineNumbers "plotManagement\plotGetFriends.sqf";
+	PlotNearbyHumans 	= compile preprocessFileLineNumbers "plotManagement\plotNearbyHumans.sqf";
+	PlotAddFriend 		= compile preprocessFileLineNumbers "plotManagement\plotAddFriend.sqf";
+	PlotRemoveFriend 	= compile preprocessFileLineNumbers "plotManagement\plotRemoveFriend.sqf";
+	MaintainPlot    	= compile preprocessFileLineNumbers "plotManagement\maintain_areaSC.sqf";
+	PlotPreview    		= compile preprocessFileLineNumbers "plotManagement\plotToggleMarkers.sqf";
+	PlotObjects         = compile preprocessFileLineNumbers "plotManagement\plotObjects.sqf"; // NEW
+	/*Plot End*/
 
 	"filmic" setToneMappingParams [0.07, 0.31, 0.23, 0.37, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
@@ -26,12 +34,12 @@ if (!isDedicated) then {
 	player_dumpBackpack = 			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_dumpBackpack.sqf";
 	building_spawnLoot =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnLoot.sqf";
 	building_spawnZombies =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\building_spawnZombies.sqf";
-	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "custom\dayz_spaceInterrupt.sqf";
+	dayz_spaceInterrupt =			compile preprocessFileLineNumbers "custom\snap_pro\dayz_spaceInterrupt.sqf";
 	player_fired =					compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_fired.sqf";			//Runs when player fires. Alerts nearby Zeds depending on calibre && audial rating
 	player_harvest =				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_harvest.sqf";
 	player_packTent =				compile preprocessFileLineNumbers "ZSC\compiles\player_packTent.sqf";
 	player_packVault =				compile preprocessFileLineNumbers "ZSC\compiles\player_packVault.sqf";
-	player_unlockVault =			compile preprocessFileLineNumbers "ZSC\compiles\player_unlockVault.sqf";
+	player_unlockVault =			compile preprocessFileLineNumbers "custom\BuildVectors\compile\player_unlockVault.sqf";
 
 	player_removeObject =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\remove.sqf";
 	player_removeNearby =    		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\object_removeNearby.sqf";
@@ -56,7 +64,7 @@ if (!isDedicated) then {
 	player_unlockDoor =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_unlockDoor.sqf";
 	player_changeCombo =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_changeCombo.sqf";
 
-	player_lockVault =			compile preprocessFileLineNumbers "ZSC\compiles\player_lockVault.sqf";
+	player_lockVault =			compile preprocessFileLineNumbers "custom\BuildVectors\compile\player_lockVault.sqf";
 	player_updateGui =			compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_updateGui.sqf";
 	player_crossbowBolt =		compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_crossbowBolt.sqf";
 	player_music = 				compile preprocessFileLineNumbers "\z\addons\dayz_code\compile\player_music.sqf";			//Used to generate ambient music
@@ -104,7 +112,6 @@ if (!isDedicated) then {
 	player_makeFire =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_makefire.sqf";
 	player_harvestPlant =		compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_harvestPlant.sqf";
 	player_goFishing =			compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_goFishing.sqf";
-	player_build =				compile preprocessFileLineNumbers "\z\addons\dayz_code\actions\player_build.sqf";
 	FillSkinList  = 			compile preprocessFileLineNumbers "zupa\skins\getList.sqf";
 	ApplySkinList  = 			compile preprocessFileLineNumbers "zupa\skins\changeClothes.sqf";
 	player_wearClothes =		compile preprocessFileLineNumbers "zupa\skins\player_wearClothes.sqf";

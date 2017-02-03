@@ -1,4 +1,4 @@
-private ["_nul","_result","_pos","_wsDone","_dir","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_intentory","_hitPoints","_fuel","_damage","_key","_vehLimit","_hiveResponse","_objectCount","_codeCount","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0","_bQty","_vQty","_BuildingQueue","_objectQueue","_superkey","_shutdown","_res","_hiveLoaded"];
+private ["_nul","_result","_pos","_wsDone","_dir","_isOK","_countr","_objWpnTypes","_objWpnQty","_dam","_selection","_totalvehicles","_object","_idKey","_type","_ownerID","_worldspace","_inventory","_hitPoints","_fuel","_damage","_key","_vehLimit","_hiveResponse","_objectCount","_codeCount","_data","_status","_val","_traderid","_retrader","_traderData","_id","_lockable","_debugMarkerPosition","_vehicle_0","_bQty","_vQty","_BuildingQueue","_objectQueue","_superkey","_shutdown","_res","_hiveLoaded"];
 
 dayz_versionNo = 		getText(configFile >> "CfgMods" >> "DayZ" >> "version");
 dayz_hiveVersionNo = 	getNumber(configFile >> "CfgMods" >> "DayZ" >> "hiveVersion");
@@ -115,6 +115,61 @@ if (isServer && isNil "sm_done") then {
 			if (count _pos < 3) then { _pos = [_pos select 0,_pos select 1,0]; };
 			diag_log ("MOVED OBJ: " + str(_idKey) + " of class " + _type + " to pos: " + str(_pos));
 		};
+
+		_vector = [[0,0,0],[0,0,0]];
+		_vecExists = false;
+		_ownerPUID = "0";   
+if (count _worldspace >= 3) then{
+    if(count _worldspace == 3) then{
+            if(typename (_worldspace select 2) == "STRING")then{
+                _ownerPUID = _worldspace select 2;
+            }else{
+                 if(typename (_worldspace select 2) == "ARRAY")then{
+                    _vector = _worldspace select 2;
+                    if(count _vector == 2)then{
+                        if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+                            _vecExists = true;
+                        };
+                    };
+                };                  
+            };
+
+    }else{
+        //Was not 3 elements, so check if 4 or more
+        if(count _worldspace == 4) then{
+            if(typename (_worldspace select 3) == "STRING")then{
+                _ownerPUID = _worldspace select 3;
+            }else{
+                if(typename (_worldspace select 2) == "STRING")then{
+                    _ownerPUID = _worldspace select 2;
+                };
+            };
+
+
+            if(typename (_worldspace select 2) == "ARRAY")then{
+                _vector = _worldspace select 2;
+                if(count _vector == 2)then{
+                    if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+                        _vecExists = true;
+                    };
+                };
+            }else{
+                if(typename (_worldspace select 3) == "ARRAY")then{
+                    _vector = _worldspace select 3;
+                    if(count _vector == 2)then{
+                        if(((count (_vector select 0)) == 3) && ((count (_vector select 1)) == 3))then{
+                            _vecExists = true;
+                        };
+                    };
+                };
+            };
+
+        }else{
+            //More than 3 or 4 elements found
+            //Might add a search for the vector, ownerPUID will equal 0
+        };
+    };
+}; 
 		
 
 		if (_damage < 1) then {
@@ -124,6 +179,9 @@ if (isServer && isNil "sm_done") then {
 			_object = createVehicle [_type, _pos, [], 0, "CAN_COLLIDE"];
 			_object setVariable ["lastUpdate",time];
 			_object setVariable ["ObjectID", _idKey, true];
+			if (typeOf (_object) == "Plastic_Pole_EP1_DZ") then {
+			_object setVariable ["plotfriends", _inventory, true];
+			};
 
 
 			_lockable = 0;
@@ -162,6 +220,9 @@ if (isServer && isNil "sm_done") then {
 			// _object setVehicleAmmo DZE_vehicleAmmo;
 			
 			_object setdir _dir;
+			if(_vecExists)then{
+    		_object setVectorDirAndUp _vector;
+			}; 
 			_object setposATL _pos;
 			_object setDamage _damage;
 
@@ -170,6 +231,7 @@ if (isServer && isNil "sm_done") then {
 			};
 
 			if ((typeOf _object) in dayz_allowedObjects) then {
+				_object setVariable["memDir",_dir,true];
 				if (DZE_GodModeBase) then {
 					_object addEventHandler ["HandleDamage", {false}];
 				} else {
@@ -182,7 +244,7 @@ if (isServer && isNil "sm_done") then {
 				
 			};
 
-			if (count _inventory > 0) then {
+			if ((count _inventory > 0) && !(typeOf( _object) == "Plastic_Pole_EP1_DZ")) then {
 				/*ZSC*/
 			if( count (_inventory) > 3)then{
 					_object setVariable ["bankMoney", _inventory select 3, true];

@@ -28,25 +28,40 @@ class Category_478 {
 		type = "trade_items";
 		buy[] ={100000,"Coins"};
 		sell[] ={50000,"Coins"};
-	}; 
+	};
 	class 2000Rnd_762x51_L94A1 {
 		type = "trade_items";
 		buy[] ={100000,"Coins"};
 		sell[] ={50000,"Coins"};
-	}; 
+	};
 	class 32Rnd_40mm_GMG {
 		type = "trade_items";
 		buy[] ={100000,"Coins"};
 		sell[] ={50000,"Coins"};
-	}; 
+	};
 	class 48Rnd_40mm_MK19 {
 		type = "trade_items";
 		buy[] ={100000,"Coins"};
 		sell[] ={50000,"Coins"};
-	}; 
+	};
 	class 2000Rnd_762x51_M134 {
 		type = "trade_items";
 		buy[] ={100000,"Coins"};
 		sell[] ={50000,"Coins"};
-	}; 
+	};
+	class 10Rnd_127x99_m107 {
+		type = "trade_items";
+		buy[] ={100000,"Coins"};
+		sell[] ={50000,"Coins"};
+	};
+	class 5Rnd_127x99_as50 {
+		type = "trade_items";
+		buy[] ={100000,"Coins"};
+		sell[] ={50000,"Coins"};
+	};
+	class 5Rnd_127x108_KSVK {
+		type = "trade_items";
+		buy[] ={100000,"Coins"};
+		sell[] ={50000,"Coins"};
+	};
 };

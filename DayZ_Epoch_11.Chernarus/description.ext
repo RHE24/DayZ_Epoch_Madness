@@ -165,22 +165,21 @@ class DayZ_loadingScreen
 	};
 };
 
-#include "dzgm\defines.hpp"
+#include "custom\defines.hpp"
+#include "custom\extra_rc.hpp"
 class RscTitles
 {
 #include "ZSC\config\ZSChud.hpp"
 #include "dzgm\icons.hpp"
 };
-#include "custom\extra_rc.hpp"
-#include "ZSC\config\ZSCdefines.hpp"
 #include "ZSC\config\ZSCdialogs.hpp"
 #include "zupa\advancedTrading\advancedTrading.hpp"
+#include "custom\snap_pro\snappoints.hpp"
+#include "plotManagement\plotManagement.hpp"
+#include "dzgm\groupManagement.hpp"
 #include "spawn\class.hpp"
 #include "spawn\halo.hpp"
 #include "spawn\spawn.hpp"
-#include "dzgm\groupManagement.hpp"
-#include "custom\snap_pro\snappoints.hpp"
-#include "zupa\skins\defines.hpp"
 #include "zupa\skins\SkinGui.hpp"
 #include "admintools\tools\Currency\currency_dialog.hpp"
 #include "admintools\dialog.hpp"
