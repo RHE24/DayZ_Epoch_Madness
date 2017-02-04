@@ -29,4 +29,69 @@ class Category_562 {
 		buy[] ={200000,"Coins"};
 		sell[] ={100000,"Coins"};
 	};
+	class M1A1_US_DES_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class M1A2_US_TUSK_MG_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class HMMWV_M998A2_SOV_DES_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class HMMWV_Avenger_DES_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class T90 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class HMMWV_Avenger {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class HMMWV_M2 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class LandRover_MG_TK_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class T34_TK_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class T55_TK_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class M1A2_TUSK_MG {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class BAF_FV510_D {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
+	class HMMWV_M998_crows_M2_DES_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={200000,"Coins"};
+		sell[] ={100000,"Coins"};
+	};
 };

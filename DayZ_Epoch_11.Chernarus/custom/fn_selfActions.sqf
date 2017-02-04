@@ -11,6 +11,8 @@ if (DZE_ActionInProgress) exitWith {}; // Do not allow if any script is running.
 _vehicle = vehicle player;
 _isPZombie = player isKindOf "PZombie_VB";
 _inVehicle = (_vehicle != player);
+_playerUID = getPlayerUID player;
+dayz_characterID = _playerUID
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
@@ -954,8 +956,6 @@ if(_isModularDoor && (dayz_characterID == _ownerID)) then {
 	s_player_checkGear = -1;
 	player removeAction s_player_SurrenderedGear;
 	s_player_SurrenderedGear = -1;
-	player removeAction s_player_elevator_next;
-	s_player_elevator_next = -1;
 	//Others
     player removeAction s_player_maintain_area;
     s_player_maintain_area = -1;
@@ -1002,7 +1002,6 @@ if(_isModularDoor && (dayz_characterID == _ownerID)) then {
 	s_player_warndog = -1;
 	player removeAction s_player_followdog;
 	s_player_followdog = -1;
-    
     // vault
 	player removeAction s_player_unlockvault;
 	s_player_unlockvault = -1;
@@ -1010,7 +1009,6 @@ if(_isModularDoor && (dayz_characterID == _ownerID)) then {
 	s_player_packvault = -1;
 	player removeAction s_player_lockvault;
 	s_player_lockvault = -1;
-
 	player removeAction s_player_information;
 	s_player_information = -1;
 	player removeAction s_player_fillgen;
@@ -1035,6 +1033,24 @@ if(_isModularDoor && (dayz_characterID == _ownerID)) then {
 	s_bank_dialog2 = -1;
 	player removeAction s_player_packOBJ;
 	s_player_packOBJ = -1;
+	player removeAction s_player_elevator_next;
+	s_player_elevator_next = -1;
+	player removeAction s_player_elevator_previous;
+	s_player_elevator_previous = -1;
+	player removeAction s_player_elevator_select;
+	s_player_elevator_select = -1;
+	player removeAction s_player_elevator_upgrade;
+	s_player_elevator_upgrade = -1;
+	player removeAction s_player_elevator_upgrade_stop;
+	s_player_elevator_upgrade_stop = -1;
+	player removeAction s_player_elevator_call;
+	s_player_elevator_call = -1;
+	player removeAction s_player_elevator_id;
+	s_player_elevator_id = -1;
+	player removeAction s_player_claimKey;
+	s_player_claimKey = -1;
+	player removeAction s_player_changeKey;
+	s_player_changeKey = -1;
 };
 
 

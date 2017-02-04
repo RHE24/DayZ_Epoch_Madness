@@ -119,4 +119,24 @@ class Category_493 {
 		buy[] ={1000000,"Coins"};
 		sell[] ={500000,"Coins"};
 	};
+	class MH6J_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={1000000,"Coins"};
+		sell[] ={500000,"Coins"};
+	};
+	class AH6X_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={1000000,"Coins"};
+		sell[] ={500000,"Coins"};
+	};
+	class AH6X_DZ {
+		type = "trade_any_vehicle";
+		buy[] ={1000000,"Coins"};
+		sell[] ={500000,"Coins"};
+	};
+	class BAF_Merlin_HC3_D {
+		type = "trade_any_vehicle";
+		buy[] ={1000000,"Coins"};
+		sell[] ={500000,"Coins"};
+	};
 };
