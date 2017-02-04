@@ -39,6 +39,11 @@ vkc_changeNeedKeykit = 1;
 //// ItemTinBar, ItemSilverBar, ItemGoldBar, ////
 ////// ItemSilverBar10oz, ItemGoldBar10oz, //////
 ///// ItemBriefcase20oz, ItemBriefcase100oz /////
+/////Global Variables not defined ///////////////
+vkc_ownerID	= "";
+vkc_cursorTarget = "";
+vkc_magazinesPlayer = "";
+vkc_itemsPlayer = "";
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 /////////////// DONT EDIT BELOW ! ///////////////

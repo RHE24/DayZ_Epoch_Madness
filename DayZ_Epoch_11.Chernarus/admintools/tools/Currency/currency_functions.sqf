@@ -20,8 +20,8 @@ CurrencyTransferMoney = {
 	_response = "";
 	_wealth = 0;
 	
-	if (_amount < 1 or _amount > 999999) exitWith {
-		cutText ["Insert a number between 1 and 999,999.", "PLAIN DOWN"];
+	if (_amount < 1 or _amount > 100000000) exitWith {
+		cutText ["Insert a number between 1 and 100,000,000.", "PLAIN DOWN"];
 	};
 	
 	if (_method == 'cash') then {

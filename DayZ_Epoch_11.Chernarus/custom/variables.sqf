@@ -189,7 +189,6 @@ boil_tin_cans = [
 dayz_combination = "";
 dayz_humanitytarget = "";
 dayz_combatLog = "";
-vkc_ownerID	= "";
 canRoll = true;
 
 canbuild = true;
@@ -296,6 +295,10 @@ dayz_resetSelfActions = {
 	s_player_packOBJ = -1;
 	s_clothes = -1;
 	s_player_elevator_next = -1;
+	s_player_elevator_previous = -1;
+	s_player_elevator_select = -1;
+	s_player_elevator_upgrade = -1;
+	s_player_elevator_upgrade_stop = -1;
 };
 call dayz_resetSelfActions;
 
@@ -646,7 +649,7 @@ if(isServer) then {
 		EpochEvents = [];
 	};
 	if(isNil "DZE_vehicleAmmo") then {
-		DZE_vehicleAmmo = 0;
+		DZE_vehicleAmmo = 1;
 	};
 
 	if(isNil "DZE_BackpackGuard") then {

@@ -24,4 +24,29 @@ class Category_479 {
 		buy[] ={75000,"Coins"};
 		sell[] ={37500,"Coins"};
 	};
+	class ArmoredSUV_PMC {
+		type = "trade_any_vehicle";
+		buy[] ={75000,"Coins"};
+		sell[] ={37500,"Coins"};
+	};
+	class BAF_Jackal2_L2A1_w {
+		type = "trade_any_vehicle";
+		buy[] ={75000,"Coins"};
+		sell[] ={37500,"Coins"};
+	};
+	class BAF_Jackal2_L2A1_D {
+		type = "trade_any_vehicle";
+		buy[] ={75000,"Coins"};
+		sell[] ={37500,"Coins"};
+	};
+	class M1126_ICV_M2_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={75000,"Coins"};
+		sell[] ={37500,"Coins"};
+	};
+	class M1128_MGS_EP1 {
+		type = "trade_any_vehicle";
+		buy[] ={75000,"Coins"};
+		sell[] ={37500,"Coins"};
+	};
 };

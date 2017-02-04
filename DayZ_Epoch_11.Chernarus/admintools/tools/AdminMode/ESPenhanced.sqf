@@ -462,7 +462,7 @@ While {enhancedESP2} do
 
 if(!enhancedESP2) then 
 {
-	(findDisplay 46) displayRemoveEventHandler ["KeyDown", KEY1];
+	(findDisplay 46) displayRemoveEventHandler ["KeyDown", F5Menu];
 
 	{
 		clearGroupIcons (group _x);
