@@ -11,8 +11,6 @@ if (DZE_ActionInProgress) exitWith {}; // Do not allow if any script is running.
 _vehicle = vehicle player;
 _isPZombie = player isKindOf "PZombie_VB";
 _inVehicle = (_vehicle != player);
-_playerUID = getPlayerUID player;
-dayz_characterID = _playerUID
 
 _onLadder =		(getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> (animationState player) >> "onLadder")) == 1;
 _canDo = (!r_drag_sqf && !r_player_unconscious && !_onLadder);
