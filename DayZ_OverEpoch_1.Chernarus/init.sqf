@@ -24,13 +24,13 @@ spawnShoremode = 0; // Default = 1 (on shore)
 dayz_paraSpawn = false;
 spawnArea= 1500; // Default = 1500
 
-MaxVehicleLimit = 500; // Default = 50
-MaxDynamicDebris = 150; // Default = 100
-dayz_MapArea = 14000; // Default = 10000
-dayz_maxLocalZombies = 20; // Default = 30 
+MaxVehicleLimit = 700; // Default = 50
+MaxDynamicDebris = 250; // Default = 100
+dayz_MapArea = 12000; // Default = 10000
+dayz_maxLocalZombies = 30; // Default = 30 
 
 dayz_minpos = -1; 
-dayz_maxpos = 16000;
+dayz_maxpos = 14000;
 DZE_SelfTransfuse = true; // default value //allow self transufe
 DZE_StaticConstructionCount = 1; //reduce time to build only 1 step
 DZE_PlayerZed = false; //remove player chance to spawn as zed.
@@ -40,7 +40,7 @@ dayz_sellDistance_vehicle = 20;
 dayz_sellDistance_boat = 30;
 dayz_sellDistance_air = 40;
 
-dayz_maxAnimals = 5; // Default: 8
+dayz_maxAnimals = 8; // Default: 8
 dayz_tameDogs = true;
 DynamicVehicleDamageLow = 20; // Default: 0
 DynamicVehicleDamageHigh = 80; // Default: 100
@@ -107,8 +107,8 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
-	execVM "dzgm\init.sqf";
 	execVM "spawn\start.sqf";
+	execVM "dzgm\init.sqf";
 	_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
 	["elevator"] execVM "elevator\elevator_init.sqf";
 	
@@ -121,8 +121,8 @@ if ( !((getPlayerUID player) in EAT_adminList) && !((getPlayerUID player) in EAT
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 
-    _nil = [] execVM "custom\remote\remote.sqf";
-    _nil = [] execVM "DZAI_Client\dzai_initclient.sqf";
+_nil = [] execVM "custom\remote\remote.sqf";
+_nil = [] execVM "DZAI_Client\dzai_initclient.sqf";
 	      execVM "ZSC\compiles\playerHud.sqf";
  	   [] execVM "service_point\service_point.sqf";
  	   [] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";

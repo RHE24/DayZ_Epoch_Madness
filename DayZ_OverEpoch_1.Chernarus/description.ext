@@ -10,14 +10,13 @@ OnLoadMissionTime = False;
 disabledAI = true;
 disableChannels[]={0,2,6};
 enableItemsDropping = 0;
-//Edit for custom loot
 #include "Scripts\loot\CfgBuildingLoot.hpp"
 
 briefing = 0;
 debriefing = 0;
 
 onPauseScript = "";
-loadScreen = "\z\addons\dayz_code\gui\dayz_logo_ca.paa";
+loadScreen = "custom\gui\dayz_logo_overpoch_ca.paa";
 
 class Header
 {
@@ -123,8 +122,7 @@ class DayZ_loadingScreen
 			text = "";
 			colorText[] = {0,0,0,0};
 			colorBackground[] = {0,0,0,1};
-		};
-		/*
+		};	
 		class nicePic : RscPicture
 		{
 			style = 48 + 0x800; // ST_PICTURE + ST_KEEP_ASPECT_RATIO
@@ -132,9 +130,8 @@ class DayZ_loadingScreen
 			y = safezoneY + safezoneH/2 - 0.2;
 			w = 0.5;
 			h = 0.4;
-			text = "img\nicePic.paa";
+			text = "custom\gui\dayz_logo_overpoch_ca.paa";
 		};
-		*/
 	};
 	class controls
 	{

@@ -89,6 +89,101 @@ class Category_662 {
 		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
+		class CinderBlocks {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class MortarBucket {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class fuel_pump_kit {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class cinder_garage_kitlocked {
+	    type = "trade_items";
+		buy[] ={25000,"Coins"};
+		sell[] ={12500,"Coins"};
+	};
+	class ItemFireBarrel_kit {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class light_pole_kit {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class ItemWoodWallLg {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallWithDoorLg {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallWindowLg {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallGarageDoorLocked {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallGarageDoorLocked {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallWithDoorLocked {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodFloor {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class metal_floor_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class cinder_wall_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class cinder_garage_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class cinder_door_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class metal_panel_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class workbench_kit {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
 };
 class Category_508 {
 	class ItemSandbag {
@@ -187,6 +282,101 @@ class Category_508 {
 		sell[] ={10000,"Coins"};
 	};
 	 class ItemMixOil {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class CinderBlocks {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class MortarBucket {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class fuel_pump_kit {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class cinder_garage_kitlocked {
+	    type = "trade_items";
+		buy[] ={25000,"Coins"};
+		sell[] ={12500,"Coins"};
+	};
+	class ItemFireBarrel_kit {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class light_pole_kit {
+	    type = "trade_items";
+		buy[] ={5000,"Coins"};
+		sell[] ={2500,"Coins"};
+	};
+	class ItemWoodWallLg {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallWithDoorLg {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallWindowLg {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallGarageDoorLocked {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallGarageDoorLocked {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodWallWithDoorLocked {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class ItemWoodFloor {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class metal_floor_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class cinder_wall_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class cinder_garage_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class cinder_door_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class metal_panel_kit {
+	    type = "trade_items";
+		buy[] ={15000,"Coins"};
+		sell[] ={7500,"Coins"};
+	};
+	class workbench_kit {
 	    type = "trade_items";
 		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
