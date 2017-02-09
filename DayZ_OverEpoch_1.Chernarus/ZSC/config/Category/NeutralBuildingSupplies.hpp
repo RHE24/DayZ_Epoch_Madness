@@ -139,11 +139,6 @@ class Category_662 {
 		buy[] ={15000,"Coins"};
 		sell[] ={7500,"Coins"};
 	};
-	class ItemWoodWallGarageDoorLocked {
-	    type = "trade_items";
-		buy[] ={15000,"Coins"};
-		sell[] ={7500,"Coins"};
-	};
 	class ItemWoodWallWithDoorLocked {
 	    type = "trade_items";
 		buy[] ={15000,"Coins"};
@@ -327,11 +322,6 @@ class Category_508 {
 		sell[] ={7500,"Coins"};
 	};
 	class ItemWoodWallWindowLg {
-	    type = "trade_items";
-		buy[] ={15000,"Coins"};
-		sell[] ={7500,"Coins"};
-	};
-	class ItemWoodWallGarageDoorLocked {
 	    type = "trade_items";
 		buy[] ={15000,"Coins"};
 		sell[] ={7500,"Coins"};
