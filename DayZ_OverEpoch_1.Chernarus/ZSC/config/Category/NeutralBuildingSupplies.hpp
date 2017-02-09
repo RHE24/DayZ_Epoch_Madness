@@ -104,11 +104,6 @@ class Category_662 {
 		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
-	class cinder_garage_kitlocked {
-	    type = "trade_items";
-		buy[] ={25000,"Coins"};
-		sell[] ={12500,"Coins"};
-	};
 	class ItemFireBarrel_kit {
 	    type = "trade_items";
 		buy[] ={5000,"Coins"};
@@ -295,11 +290,6 @@ class Category_508 {
 	    type = "trade_items";
 		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
-	};
-	class cinder_garage_kitlocked {
-	    type = "trade_items";
-		buy[] ={25000,"Coins"};
-		sell[] ={12500,"Coins"};
 	};
 	class ItemFireBarrel_kit {
 	    type = "trade_items";
