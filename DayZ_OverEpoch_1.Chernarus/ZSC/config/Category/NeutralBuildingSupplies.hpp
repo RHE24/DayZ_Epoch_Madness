@@ -186,142 +186,142 @@ class Category_662 {
 	};
 	class deer_stand_kit {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={7500,"Coins"};
 	};
 	class desert_large_net_kit {
 	    type = "trade_items";
-		buy[] =1{25000,"Coins"};
+		buy[] ={25000,"Coins"};
 		sell[] ={12500,"Coins"};
 	};
 	class forest_large_net_kit {
 	    type = "trade_items";
-		buy[] =1{25000,"Coins"};
+		buy[] ={25000,"Coins"};
 		sell[] ={12500,"Coins"};
 	};
 	class wooden_shed_kit {
 	    type = "trade_items";
-		buy[] =1{25000,"Coins"};
+		buy[] ={25000,"Coins"};
 		sell[] ={12500,"Coins"};
 	};
 	class wood_shack_kit {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class m240_nest_kit {
 	    type = "trade_items";
-		buy[] =1{250000,"Coins"};
+		buy[] ={250000,"Coins"};
 		sell[] ={125000,"Coins"};
 	};
 	class storage_shed_kit {
 	    type = "trade_items";
-		buy[] =1{50000,"Coins"};
+		buy[] ={50000,"Coins"};
 		sell[] ={25000,"Coins"};
 	};
 	class ItemScaffoldingKit {
 	    type = "trade_items";
-		buy[] =1{50000,"Coins"};
+		buy[] ={50000,"Coins"};
 		sell[] ={25000,"Coins"};
 	};
 	class PartPlywoodPack {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class PartPlankPack {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class PartWoodLumber {
 	    type = "trade_items";
-		buy[] =1{1000,"Coins"};
+		buy[] ={1000,"Coins"};
 		sell[] ={500,"Coins"};
 	};
 	class PartWoodPlywood {
 	    type = "trade_items";
-		buy[] =1{1000,"Coins"};
+		buy[] ={1000,"Coins"};
 		sell[] ={500,"Coins"};
 	};
 	class ItemFuelBarrel {
 	    type = "trade_items";
-		buy[] =1{2500,"Coins"};
+		buy[] ={2500,"Coins"};
 		sell[] ={1250,"Coins"};
 	};
 	class ItemOilBarrel {
 	    type = "trade_items";
-		buy[] =1{2500,"Coins"};
+		buy[] ={2500,"Coins"};
 		sell[] ={1250,"Coins"};
 	};
 	class ItemGunRackKit {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class ItemBurlap {
 	    type = "trade_items";
-		buy[] =1{2000,"Coins"};
+		buy[] ={2000,"Coins"};
 		sell[] ={1000,"Coins"};
 	};
 	class ItemCanvas {
 	    type = "trade_items";
-		buy[] =1{2000,"Coins"};
+		buy[] ={2000,"Coins"};
 		sell[] ={1000,"Coins"};
 	};
 	class ItemWoodLadder {
 	    type = "trade_items";
-		buy[] =1{12000,"Coins"};
+		buy[] ={12000,"Coins"};
 		sell[] ={6000,"Coins"};
 	};
 	class ItemWoodStairs {
 	    type = "trade_items";
-		buy[] =1{12000,"Coins"};
+		buy[] ={12000,"Coins"};
 		sell[] ={6000,"Coins"};
 	};
 	class ItemWoodStairs {
 	    type = "trade_items";
-		buy[] =1{12000,"Coins"};
+		buy[] ={12000,"Coins"};
 		sell[] ={6000,"Coins"};
 	};
 	class full_cinder_wall_kit {
 	    type = "trade_items";
-		buy[] =1{25000,"Coins"};
+		buy[] ={25000,"Coins"};
 		sell[] ={12500,"Coins"};
 	};
 	class half_cinder_wall_kit {
 	    type = "trade_items";
-		buy[] =1{15000,"Coins"};
+		buy[] ={15000,"Coins"};
 		sell[] ={7500,"Coins"};
 	};
 	class ItemWoodStairsSupport {
 	    type = "trade_items";
-		buy[] =1{15000,"Coins"};
+		buy[] ={15000,"Coins"};
 		sell[] ={7500,"Coins"};
 	};
 	class ItemWoodFloorHalf {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class ItemWoodFloorQuarter {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class ItemWoodWallThird {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class ItemWoodWall {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class rusty_gate_kit {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 };
@@ -513,137 +513,137 @@ class Category_508 {
 	};
 	class deer_stand_kit {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={7500,"Coins"};
 	};
 	class desert_large_net_kit {
 	    type = "trade_items";
-		buy[] =1{25000,"Coins"};
+		buy[] ={25000,"Coins"};
 		sell[] ={12500,"Coins"};
 	};
 	class forest_large_net_kit {
 	    type = "trade_items";
-		buy[] =1{25000,"Coins"};
+		buy[] ={25000,"Coins"};
 		sell[] ={12500,"Coins"};
 	};
 	class wooden_shed_kit {
 	    type = "trade_items";
-		buy[] =1{25000,"Coins"};
+		buy[] ={25000,"Coins"};
 		sell[] ={12500,"Coins"};
 	};
 	class wood_shack_kit {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class m240_nest_kit {
 	    type = "trade_items";
-		buy[] =1{250000,"Coins"};
+		buy[] ={250000,"Coins"};
 		sell[] ={125000,"Coins"};
 	};
 	class storage_shed_kit {
 	    type = "trade_items";
-		buy[] =1{50000,"Coins"};
+		buy[] ={50000,"Coins"};
 		sell[] ={25000,"Coins"};
 	};
 	class ItemScaffoldingKit {
 	    type = "trade_items";
-		buy[] =1{50000,"Coins"};
+		buy[] ={50000,"Coins"};
 		sell[] ={25000,"Coins"};
 	};
 	class PartPlywoodPack {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class PartPlankPack {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class PartWoodLumber {
 	    type = "trade_items";
-		buy[] =1{1000,"Coins"};
+		buy[] ={1000,"Coins"};
 		sell[] ={500,"Coins"};
 	};
 	class PartWoodPlywood {
 	    type = "trade_items";
-		buy[] =1{1000,"Coins"};
+		buy[] ={1000,"Coins"};
 		sell[] ={500,"Coins"};
 	};
 	class ItemFuelBarrel {
 	    type = "trade_items";
-		buy[] =1{2500,"Coins"};
+		buy[] ={2500,"Coins"};
 		sell[] ={1250,"Coins"};
 	};
 	class ItemOilBarrel {
 	    type = "trade_items";
-		buy[] =1{2500,"Coins"};
+		buy[] ={2500,"Coins"};
 		sell[] ={1250,"Coins"};
 	};
 	class ItemGunRackKit {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class ItemBurlap {
 	    type = "trade_items";
-		buy[] =1{2000,"Coins"};
+		buy[] ={2000,"Coins"};
 		sell[] ={1000,"Coins"};
 	};
 	class ItemCanvas {
 	    type = "trade_items";
-		buy[] =1{2000,"Coins"};
+		buy[] ={2000,"Coins"};
 		sell[] ={1000,"Coins"};
 	};
 	class ItemWoodLadder {
 	    type = "trade_items";
-		buy[] =1{12000,"Coins"};
+		buy[] ={12000,"Coins"};
 		sell[] ={6000,"Coins"};
 	};
 	class ItemWoodStairs {
 	    type = "trade_items";
-		buy[] =1{12000,"Coins"};
+		buy[] ={12000,"Coins"};
 		sell[] ={6000,"Coins"};
 	};
 	class full_cinder_wall_kit {
 	    type = "trade_items";
-		buy[] =1{25000,"Coins"};
+		buy[] ={25000,"Coins"};
 		sell[] ={12500,"Coins"};
 	};
 	class half_cinder_wall_kit {
 	    type = "trade_items";
-		buy[] =1{15000,"Coins"};
+		buy[] ={15000,"Coins"};
 		sell[] ={7500,"Coins"};
 	};
 	class ItemWoodStairsSupport {
 	    type = "trade_items";
-		buy[] =1{15000,"Coins"};
+		buy[] ={15000,"Coins"};
 		sell[] ={7500,"Coins"};
 	};
 	class ItemWoodFloorHalf {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class ItemWoodFloorQuarter {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class ItemWoodWallThird {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class ItemWoodWall {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 	class rusty_gate_kit {
 	    type = "trade_items";
-		buy[] =1{5000,"Coins"};
+		buy[] ={5000,"Coins"};
 		sell[] ={2500,"Coins"};
 	};
 };
