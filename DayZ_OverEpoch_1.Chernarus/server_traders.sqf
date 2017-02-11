@@ -1,6 +1,6 @@
 serverTraders = ["US_Soldier_Pilot_EP1", "RU_Functionary1","RU_Citizen3","Rocker4","Profiteer4","Rita_Ensler_EP1","CIV_EuroMan01_EP1","CIV_EuroMan02_EP1","TK_GUE_Soldier_5_EP1","GUE_Soldier_MG","Worker2","Worker3","Soldier_GL_M16A2_PMC","Woodlander1","UN_CDF_Soldier_Pilot_EP1","RU_WorkWoman1","Dr_Annie_Baker_EP1","RU_Citizen4","RU_WorkWoman5","RU_Citizen1","RU_Villager3","TK_CIV_Takistani04_EP1","Pilot_EP1","RU_Profiteer4","Woodlander3","Dr_Hladik_EP1","Doctor","HouseWife1","GUE_Woodlander2"];
 menu_RU_Functionary1 = [
-	[["Ammunition",478],["Clothes",575],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477],["Money",700]],
+	[["Ammunition",478],["Clothes",575],["Helicopter Armed",493],["Military Armed",562],["Trucks Armed",479],["Weapons",477],["Money",700],["Assault Rifle",637],["Light Machine Gun",638],["Pistols",674],["Shotguns And Single Shot",641],["Sniper Rifle",640],["Submachine Guns",642],["Overwatch Vil",1002],["Overwatch Tar",1003],["Overwatch Sniper",1011],["Overwatch Scar",1004],["Overwatch Sidearm",1001],["Overwatch Mas",1007],["Overwatch Hk417",1009],["Overwatch Hk416",1008],["Overwatch Hk416",1008],["Overwatch Dmr",1010],["Overwatch Acr",1005],["Overwatch Pistol Ammo",1012],["Overwatch Gun Ammo",1013]],
 	[],
 	"hero"
 ];
