@@ -54,6 +54,11 @@ class Category_685 {
 		buy[] ={6000,"Coins"};
 		sell[] ={3000,"Coins"};
 	};
+	class DZ_LargeGunBag_EP1 {
+		type = "trade_backpacks";
+		buy[] ={10000,"Coins"};
+		sell[] ={5000,"Coins"};
+	};
 };
 class Category_496 {
 	class DZ_Patrol_Pack_EP1 {
@@ -111,6 +116,11 @@ class Category_496 {
 		buy[] ={6000,"Coins"};
 		sell[] ={3000,"Coins"};
 	};
+	class DZ_LargeGunBag_EP1 {
+		type = "trade_backpacks";
+		buy[] ={10000,"Coins"};
+		sell[] ={5000,"Coins"};
+	};
 };
 class Category_632 {
 	class DZ_Patrol_Pack_EP1 {
@@ -167,5 +177,10 @@ class Category_632 {
 		type = "trade_backpacks";
 		buy[] ={6000,"Coins"};
 		sell[] ={3000,"Coins"};
+	};
+	class DZ_LargeGunBag_EP1 {
+		type = "trade_backpacks";
+		buy[] ={10000,"Coins"};
+		sell[] ={5000,"Coins"};
 	};
 };

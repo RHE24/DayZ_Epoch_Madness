@@ -34,6 +34,11 @@ class Category_646 {
 		buy[] ={20,"Coins"};
 		sell[] ={10,"Coins"};
 	};
+	class RH_7Rnd_50_AE {
+		type = "trade_items";
+		buy[] ={20,"Coins"};
+		sell[] ={10,"Coins"};
+	};
 };
 class Category_611 {
 	class 15Rnd_9x19_M9 {
@@ -67,6 +72,11 @@ class Category_611 {
 		sell[] ={10,"Coins"};
 	};
 	class 8Rnd_9x18_MakarovSD {
+		type = "trade_items";
+		buy[] ={20,"Coins"};
+		sell[] ={10,"Coins"};
+	};
+	class RH_7Rnd_50_AE {
 		type = "trade_items";
 		buy[] ={20,"Coins"};
 		sell[] ={10,"Coins"};

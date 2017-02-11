@@ -279,16 +279,6 @@ class Category_662 {
 		buy[] ={12000,"Coins"};
 		sell[] ={6000,"Coins"};
 	};
-	class full_cinder_wall_kit {
-	    type = "trade_items";
-		buy[] ={25000,"Coins"};
-		sell[] ={12500,"Coins"};
-	};
-	class half_cinder_wall_kit {
-	    type = "trade_items";
-		buy[] ={15000,"Coins"};
-		sell[] ={7500,"Coins"};
-	};
 	class ItemWoodStairsSupport {
 	    type = "trade_items";
 		buy[] ={15000,"Coins"};
@@ -600,16 +590,6 @@ class Category_508 {
 	    type = "trade_items";
 		buy[] ={12000,"Coins"};
 		sell[] ={6000,"Coins"};
-	};
-	class full_cinder_wall_kit {
-	    type = "trade_items";
-		buy[] ={25000,"Coins"};
-		sell[] ={12500,"Coins"};
-	};
-	class half_cinder_wall_kit {
-	    type = "trade_items";
-		buy[] ={15000,"Coins"};
-		sell[] ={7500,"Coins"};
 	};
 	class ItemWoodStairsSupport {
 	    type = "trade_items";
