@@ -18,4 +18,12 @@ class MG36_camo {type = "trade_weapons";buy[] ={57500,"Coins"};sell[] ={20000,"C
 class bizon {type = "trade_weapons";buy[] ={25000,"Coins"};sell[] ={5000,"Coins"};};
 class M4A1_HWS_GL_SD_Camo {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={17500,"Coins"};};
 class KSVK_DZE {type = "trade_weapons";buy[] ={75000,"Coins"};sell[] ={20000,"Coins"};};
+class BAF_AS50_scoped {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class PMC_AS50_TWS {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class PMC_AS50_scoped {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class BAF_AS50_TWS {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class m107 {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class m107_TWS_EP1 {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class FHQ_MSR_DESERT {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class FHQ_XM2010_DESERT {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
 };

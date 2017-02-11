@@ -66,8 +66,8 @@ class Mission
 		forecastWeather=0.52341133;
 		year=2017;
 		month=02;
-		day=8;
-		hour=15;
+		day=12;
+		hour=14;
 	};
 	class Groups
 	{
