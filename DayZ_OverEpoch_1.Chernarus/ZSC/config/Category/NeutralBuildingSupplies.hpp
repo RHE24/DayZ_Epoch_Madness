@@ -279,11 +279,6 @@ class Category_662 {
 		buy[] ={12000,"Coins"};
 		sell[] ={6000,"Coins"};
 	};
-	class ItemWoodStairs {
-	    type = "trade_items";
-		buy[] ={12000,"Coins"};
-		sell[] ={6000,"Coins"};
-	};
 	class full_cinder_wall_kit {
 	    type = "trade_items";
 		buy[] ={25000,"Coins"};
