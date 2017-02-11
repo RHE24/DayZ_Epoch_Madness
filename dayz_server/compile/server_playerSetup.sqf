@@ -208,4 +208,4 @@ _playerObj setVariable ["lastTime",time];
 //diag_log ("LOGIN PUBLISHING: " + str(_playerObj) + " Type: " + (typeOf _playerObj));
 
 PVDZE_plr_Login = nil;
-PVCDZ_plr_Login2 = nil;
+PVCDZ_plr_Login2 = [_worldspace,_state,_randomSpot];
