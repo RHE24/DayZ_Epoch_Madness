@@ -40,7 +40,6 @@ class SCAR_H_LNG_Sniper_SD {type = "trade_weapons";buy[] = {75000,"Coins"};sell[
 class SCAR_H_STD_EGLM_Spect {type = "trade_weapons";buy[] = {70000,"Coins"};sell[] = {15000,"Coins"};};
 class VIL_M4 {type = "trade_weapons";buy[] = {4000,"Coins"};sell[] = {2000,"Coins"};};
 class VIL_M4_aim {type = "trade_weapons";buy[] = {4200,"Coins"};sell[] = {2100,"Coins"};};
-class VSS_vintorez {type = "trade_weapons";buy[] = {5000,"Coins"};sell[] = {2500,"Coins"};};
 class Vil_AKS_74_UB {type = "trade_weapons";buy[] = {4000,"Coins"};sell[] = {2000,"Coins"};};
 class Vil_AKS_74_UN_kobra {type = "trade_weapons";buy[] = {4200,"Coins"};sell[] = {2100,"Coins"};};
 class Vil_AK_105_c {type = "trade_weapons";buy[] = {4000,"Coins"};sell[] = {2000,"Coins"};};

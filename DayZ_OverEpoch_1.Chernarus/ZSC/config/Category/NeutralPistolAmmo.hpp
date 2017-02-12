@@ -34,11 +34,7 @@ class Category_646 {
 		buy[] ={20,"Coins"};
 		sell[] ={10,"Coins"};
 	};
-	class RH_7Rnd_50_AE {
-		type = "trade_items";
-		buy[] ={20,"Coins"};
-		sell[] ={10,"Coins"};
-	};
+class RH_7Rnd_50_AE {type = "trade_items";buy[] ={20,"Coins"};sell[] ={10,"Coins"};};
 class RH_6Rnd_44_Mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class RH_6Rnd_357_Mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class RH_13Rnd_9x19_bhp {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
@@ -62,11 +58,6 @@ class RH_32Rnd_9x19_Muzi {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10
 class vil_bhp_mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class vil_usp45_mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class vil_usp45sd_mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 17Rnd_9x19_glock17 {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 15Rnd_9x19_M9 {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 15Rnd_9x19_M9SD {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 30Rnd_9x19_MP5 {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 30Rnd_9x19_MP5SD {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class vil_32Rnd_UZI_SD {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class vil_32Rnd_uzi {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 };
@@ -106,11 +97,7 @@ class Category_611 {
 		buy[] ={20,"Coins"};
 		sell[] ={10,"Coins"};
 	};
-	class RH_7Rnd_50_AE {
-		type = "trade_items";
-		buy[] ={20,"Coins"};
-		sell[] ={10,"Coins"};
-	};
+class RH_7Rnd_50_AE {type = "trade_items";buy[] ={20,"Coins"};sell[] ={10,"Coins"};};
 class RH_6Rnd_44_Mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class RH_6Rnd_357_Mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class RH_13Rnd_9x19_bhp {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
@@ -134,11 +121,6 @@ class RH_32Rnd_9x19_Muzi {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10
 class vil_bhp_mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class vil_usp45_mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class vil_usp45sd_mag {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 17Rnd_9x19_glock17 {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 15Rnd_9x19_M9 {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 15Rnd_9x19_M9SD {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 30Rnd_9x19_MP5 {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
-class 30Rnd_9x19_MP5SD {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class vil_32Rnd_UZI_SD {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 class vil_32Rnd_uzi {type = "trade_items";buy[] = {20,"Coins"};sell[] = {10,"Coins"};};
 };
