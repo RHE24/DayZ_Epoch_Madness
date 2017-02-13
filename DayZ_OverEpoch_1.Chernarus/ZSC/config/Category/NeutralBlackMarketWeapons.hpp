@@ -1,6 +1,8 @@
 class Category_526 {
 class Saiga12K {type = "trade_weapons";buy[] ={20000,"Coins"};sell[] ={4000,"Coins"};};
 class m8_compact {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
+class BAF_LRR_scoped {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
+class BAF_LRR_scoped_W {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
 class m8_sharpshooter {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
 class m8_holo_sd {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
 class m8_carbine {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};

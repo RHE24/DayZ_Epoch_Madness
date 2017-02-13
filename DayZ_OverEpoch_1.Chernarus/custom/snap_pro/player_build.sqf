@@ -37,7 +37,7 @@ if(isNil "vectorBuildVariables") then{
 
 // disallow building if too many objects are found within (30m by default) add DZE_checkNearbyRadius = 30; to your init.sqf to change
 _pos = [player] call FNC_GetPos;
-_cnt = count (_pos nearObjects ["All",DZE_checkNearbyRadius]); 
+_cnt = count (_pos nearObjects ["All",DZE_PlotPole select 0]); 
  if (_cnt >= DZE_BuildingLimit) exitWith { //end script if too many objects nearby
  	DZE_ActionInProgress = false;
  	cutText [(localize "str_epoch_player_41"), "PLAIN DOWN"];
@@ -209,11 +209,17 @@ if(_IsNearPlot == 0) then {
 	} else {
 		// disallow building plot
 		if(!_isPole) then {
-			_friendlies		= player getVariable ["friendlyTo",[]];
-			// check if friendly to owner
-			if(_ownerID in _friendlies) then {
-				_canBuildOnPlot = true;
-			};
+			_friendlies = _nearestPole getVariable ["plotfriends",[]];
+_fuid  = [];
+{
+      _friendUID = _x select 0;
+      _fuid  =  _fuid  + [_friendUID];
+} forEach _friendlies;
+_builder  = getPlayerUID player;
+// check if friendly to owner
+if(_builder in _fuid) then {
+    _canBuildOnPlot = true;
+};
 		};
 	};
 };

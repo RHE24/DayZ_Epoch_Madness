@@ -3,7 +3,7 @@
 	Usage: [_obj] spawn player_unlockVault;
 	Made for DayZ Epoch please ask permission to use/edit/distrubute email vbawol@veteranbastards.com.
 */
-private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking","_lockedClass","_text","_playerNear"];
+private ["_objectID","_objectUID","_obj","_ownerID","_dir","_pos","_holder","_weapons","_magazines","_backpacks","_alreadyPacking","_lockedClass","_text","_playerNear","_vector"];
 
 if(DZE_ActionInProgress) exitWith { cutText [(localize "str_epoch_player_10") , "PLAIN DOWN"]; };
 DZE_ActionInProgress = true;
@@ -44,6 +44,7 @@ if (s_bank_dialog >= 0) then {
 };
 
 _dir = direction _obj;
+_vector = [(vectorDir _obj),(vectorUp _obj)];
 _pos = _obj getVariable["OEMPos",(getposATL _obj)];
 
 if(!isNull _obj) then {
@@ -54,6 +55,8 @@ if(!isNull _obj) then {
 	//place vault
 	_holder = createVehicle [_lockedClass,_pos,[], 0, "CAN_COLLIDE"];
 	_holder setdir _dir;
+	_holder setVariable["memDir",_dir,true];
+	_holder setVectorDirAndUp _vector;
 	_holder setPosATL _pos;
 	player reveal _holder;
 	

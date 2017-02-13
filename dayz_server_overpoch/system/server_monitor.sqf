@@ -182,8 +182,6 @@ if (count _worldspace >= 3) then{
 			if (typeOf (_object) == "Plastic_Pole_EP1_DZ") then {
 			_object setVariable ["plotfriends", _inventory, true];
 			};
-
-
 			_lockable = 0;
 			if(isNumber (configFile >> "CfgVehicles" >> _type >> "lockable")) then {
 				_lockable = getNumber(configFile >> "CfgVehicles" >> _type >> "lockable");

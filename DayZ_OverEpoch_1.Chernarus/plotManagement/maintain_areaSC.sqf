@@ -39,7 +39,7 @@ if (_count == 0) exitWith {
 	s_player_maintain_area_preview = -1;
 };
 
-_theCost = _count * 1;
+_theCost = _count * 150;
 _requirements = [[CurrencyName,_theCost]];
 
 

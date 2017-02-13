@@ -52,7 +52,7 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 	_pos	= _obj getVariable["OEMPos",(getposATL _obj)];
 	_objectID 	= _obj getVariable["ObjectID","0"];
 	_objectUID	= _obj getVariable["ObjectUID","0"];
-
+	_objMoney	= _obj getVariable["bankMoney",0];
 	_claimedBy = _obj getVariable["claimed","0"];
 	
 	if (_claimedBy == _playerID) then {
@@ -85,7 +85,7 @@ if ((_ownerID == dayz_combination) || (_ownerID == dayz_playerUID)) then {
 			_holder setVariable["ObjectID",_objectID,true];
 			_holder setVariable["ObjectUID",_objectUID,true];
 			_holder setVariable ["OEMPos", _pos, true];
-
+			_holder setVariable ["bankMoney", _objMoney, true];
 			if (count _weapons > 0) then {
 				//Add weapons
 				_objWpnTypes = 	_weapons select 0;

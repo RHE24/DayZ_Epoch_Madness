@@ -201,9 +201,6 @@ _object_vehicleKey = {
 	};
 	
 	/* Get the Inventory of the Vehicle */
-	if (typeOf (_object) == "Plastic_Pole_EP1_DZ") then{
-    _inventory = _object getVariable ["plotfriends", []]; //We're replacing the inventory with UIDs for this item
-	} else {
     _inventory = [
     getWeaponCargo _object,
     getMagazineCargo _object,

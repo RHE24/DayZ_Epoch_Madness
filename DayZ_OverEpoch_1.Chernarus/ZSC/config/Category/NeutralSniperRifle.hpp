@@ -36,6 +36,8 @@ class gms_k98 {type = "trade_weapons";buy[] = {50000,"Coins"};sell[] = {20000,"C
 class gms_k98_knife {type = "trade_weapons";buy[] = {50000,"Coins"};sell[] = {20000,"Coins"};};
 class gms_k98_rg {type = "trade_weapons";buy[] = {50000,"Coins"};sell[] = {20000,"Coins"};};
 class gms_k98zf39 {type = "trade_weapons";buy[] = {50000,"Coins"};sell[] = {20000,"Coins"};};
+class BAF_LRR_scoped {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
+class BAF_LRR_scoped_W {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
 };
 class Category_640 {
 class SVD_CAMO {type = "trade_weapons";buy[] ={67500,"Coins"};sell[] ={10000,"Coins"};};
@@ -75,4 +77,6 @@ class gms_k98 {type = "trade_weapons";buy[] = {50000,"Coins"};sell[] = {20000,"C
 class gms_k98_knife {type = "trade_weapons";buy[] = {50000,"Coins"};sell[] = {20000,"Coins"};};
 class gms_k98_rg {type = "trade_weapons";buy[] = {50000,"Coins"};sell[] = {20000,"Coins"};};
 class gms_k98zf39 {type = "trade_weapons";buy[] = {50000,"Coins"};sell[] = {20000,"Coins"};};
+class BAF_LRR_scoped {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
+class BAF_LRR_scoped_W {type = "trade_weapons";buy[] ={55000,"Coins"};sell[] ={15000,"Coins"};};
 };

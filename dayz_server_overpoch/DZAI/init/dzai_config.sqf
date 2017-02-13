@@ -268,22 +268,22 @@ DZAI_launchersPerGroup = 1;
 --------------------------------------------------------------------------------------------------------------------*/
 
 //Number of selections of medical items (Inventory)
-DZAI_invmedicals = 3;
+DZAI_invmedicals = 2;
 
 //Number of selections of edible items (Inventory) 										
-DZAI_invedibles = 3;	
+DZAI_invedibles = 2;	
 
 //Number of selections of medical items (Backpack)									
-DZAI_bpmedicals = 3; 	
+DZAI_bpmedicals = 2; 	
 
 //Number of selections of edible items (Backpack)									
-DZAI_bpedibles = 3;	
+DZAI_bpedibles = 2;	
 
 //Maximum number of items to select from DZAI_MiscItemS table.										
-DZAI_numMiscItemS = 3;						
+DZAI_numMiscItemS = 5;						
 
 //Maximum number of items to select from DZAI_MiscItemL table.				
-DZAI_numMiscItemL = 3;										
+DZAI_numMiscItemL = 5;										
 
 
 /*	AI loot probability settings
@@ -296,29 +296,29 @@ DZAI_chanceMedicals = 0.70;
 DZAI_chanceEdibles = 0.70;
 
 //Chance to add each random item from DZAI_MiscItemS table.									
-DZAI_chanceMiscItemS = 0.60;
+DZAI_chanceMiscItemS = 0.70;
 
 //Chance to add each random item from DZAI_MiscItemL table.								
-DZAI_chanceMiscItemL = 0.50;								
+DZAI_chanceMiscItemL = 0.70;								
 
 
 /*AI weapon/skill probabilities (gradeChances should add up to 1.00) - [Civilian, Military, MilitarySpecial, HeliCrash] - Note: AI with higher grade weaponry will also have higher skill settings.
 --------------------------------------------------------------------------------------------------------------------*/
 
 //equipType level 0 - most AI will have basic pistols or rifles, and occasionally common military weapons.
-DZAI_gradeChances0 = [0.50,0.80,0.50,0.20];	
+DZAI_gradeChances0 = [0.10,0.80,0.80,0.10];	
 
 //equipType level 1 - most AI will have common rifles, many will have common military weapons. Very rarely, AI will spawn with high-grade military or helicrash weapons.				
-DZAI_gradeChances1 = [0.50,0.80,0.50,0.20];	
+DZAI_gradeChances1 = [0.10,0.80,0.80,0.10];	
 
 //equipType level 2 - most AI carry military weapons, and occasionally high-grade military weapons.				
-DZAI_gradeChances2 = [0.50,0.80,0.50,0.20];
+DZAI_gradeChances2 = [0.10,0.60,0.80,0.10];
 
 //equipType level 3 - All AI will carry at least a military-grade weapon. Many will be carrying high-grade military weapons. Note: Air and land vehicle patrols use equipType level 3.					
-DZAI_gradeChances3 = [0.80,0.80,0.50,0.20];	
+DZAI_gradeChances3 = [0.10,0.80,0.80,0.10];	
 
 //equipType level "dynamic" - Weapongrade chances for dynamic-spawned AI. Majority of dynamic AI will be carrying low-grade military weapons, some will carry high-grade military.			
-DZAI_gradeChancesDyn = [0.50,0.80,0.50,0.30];				
+DZAI_gradeChancesDyn = [0.10,0.80,0.80,0.10];				
 
 
 /*
@@ -424,12 +424,12 @@ DZAI_skill9 = nil;
 //Default weapon classname tables - DZAI will ONLY use these tables if the dynamic weapon list (DZAI_dynamicWeaponList) is disabled, otherwise they are ignored and overwritten if it is enabled.
 //Note: Low-level AI (weapongrade 0) may use pistols listed in DZAI_Pistols0 or DZAI_Pistols1. Mid/high level AI (weapongrade 1+) will carry pistol weapons but not use them - they will use rifle weapons instead.
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-DZAI_Pistols0 = ["RH_deagle","Gold RH_anacg","Makarov","Colt1911","revolver_EP1"]; 				//Weapongrade 0 pistols
-DZAI_Pistols1 = ["RH_m9","M9","M9SD","MakarovSD","UZI_EP1","glock17_EP1"]; 	//Weapongrade 1 pistols
+DZAI_Pistols0 = ["RH_m9","M9","M9SD","UZI_EP1","glock17_EP1"]; 				//Weapongrade 0 pistols
+DZAI_Pistols1 = ["RH_vz61","vil_uzi_c","vil_uzimini","RH_Deaglemzb","M9SD","MakarovSD","UZI_EP1","glock17_EP1"]; 	//Weapongrade 1 pistols
 DZAI_Pistols2 = ["RH_Deagles","RH_m9sd","RH_m93r","RH_m9c","M9SD","MakarovSD","UZI_EP1","glock17_EP1"]; 		//Weapongrade 2 pistols
 DZAI_Pistols3 = ["RH_vz61","vil_uzi_c","vil_uzimini","RH_Deaglemzb","M9SD","MakarovSD","UZI_EP1","glock17_EP1"]; 		//Weapongrade 3 pistols
 
-DZAI_Rifles0 = ["LeeEnfield","Winchester1866","MR43","huntingrifle","LeeEnfield","Winchester1866","MR43"]; //Weapongrade 0 rifles
+DZAI_Rifles0 = ["RH_hk416eotech","RH_hk416sacog","RH_hk416","vil_AG36","vil_HK417s","vil_AK_74m_EOT","vil_AK_107","vil_AEK1","M16A2","M16A2GL","AK_74","Winchester1866","MR43"]; //Weapongrade 0 rifles
 DZAI_Rifles1 = ["RH_hk416eotech","RH_hk416sacog","RH_hk416","vil_AG36","vil_HK417s","vil_AK_74m_EOT","vil_AK_107","vil_AEK1","M16A2","M16A2GL","AK_74","M4A1_Aim","AKS_74_kobra","AKS_74_U","AK_47_M","M24","M1014","DMR_DZ","M4A1","M14_EP1","Remington870_lamp","MP5A5","MP5SD","M4A3_CCO_EP1"]; //Weapongrade 1 rifles
 DZAI_Rifles2 = ["vil_SKS","vil_VAL_C","vil_Groza_HG","vil_9a91_c","vil_RPK74M","vil_PKP_EOT","RH_hk417sgleotech","RH_hk417sglacog","RH_hk417acog","M16A2","M16A2GL","M249_DZ","AK_74","M4A1_Aim","AKS_74_kobra","AKS_74_U","AK_47_M","M24","SVD_CAMO","M1014","DMR_DZ","M4A1","M14_EP1","Remington870_lamp","M240_DZ","M4A1_AIM_SD_camo","M16A4_ACG","M4A1_HWS_GL_camo","Mk_48_DZ","M4A3_CCO_EP1","Sa58V_RCO_EP1","Sa58V_CCO_EP1","M40A3","Sa58P_EP1","Sa58V_EP1"]; //Weapongrade 2 rifles
 DZAI_Rifles3 = ["vil_SVDK","USSR_cheytacM200_sd","USSR_cheytacM200","FHQ_XM2010_DESERT","FHQ_MSR_DESERT","BAF_AS50_scoped","m107_TWS_EP1","PMC_AS50_scoped","m107","PMC_AS50_TWS","RH_hk417sp","RH_hk417s","RH_hk417sdsp","FN_FAL","FN_FAL_ANPVS4","Mk_48_DZ","M249_DZ","BAF_L85A2_RIS_Holo","G36C","G36C_camo","G36A_camo","G36K_camo","AK_47_M","AKS_74_U","M14_EP1","bizon_silenced","DMR_DZ","RPK_74"]; //Weapongrade 3 rifles
@@ -473,8 +473,8 @@ DZAI_Medicals2 = ["ItemPainkiller", "ItemMorphine", "ItemBandage", "ItemBloodbag
 
 //AI Miscellaneous item types. DZAI_MiscItemS: List of random low-value items. DZAI_MiscItemL: List of random semi-valuable/useful items
 //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-DZAI_MiscItemS = ["ItemSilverBar10oz","ItemGoldBar10oz","ItemBriefcase100oz","ItemHeatpack", "HandRoadFlare", "HandChemBlue", "HandChemRed", "HandChemGreen","SmokeShell","TrashTinCan","TrashJackDaniels","ItemSodaEmpty"];
-DZAI_MiscItemL = ["ItemBriefcase100oz","ItemJerrycan", "PartWheel", "PartEngine", "PartFueltank", "PartGlass", "PartVRotor","PartWoodPile"];
+DZAI_MiscItemS = ["ItemSilverBar10oz", "ItemGoldBar10oz", "ItemBriefcase100oz", "ItemHeatpack", "HandRoadFlare", "HandChemBlue", "HandChemRed", "HandChemGreen", "SmokeShell", "TrashTinCan", "TrashJackDaniels", "ItemSodaEmpty"];
+DZAI_MiscItemL = ["ItemBriefcase100oz", "ItemGoldBar10oz", "ItemJerrycan", "PartWheel", "PartEngine", "PartFueltank", "PartGlass", "PartVRotor","PartWoodPile"];
 
 
 //AI toolbelt item types. Toolbelt items are added to AI inventory upon death. Format: [item classname, item probability]

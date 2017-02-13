@@ -136,7 +136,7 @@ if (_isModel &&  !(_model in ["Survivor2_DZ"])) then {
 		if (!(_primweapon in _weapons) && _primweapon != "") then {_weapons = _weapons + [_primweapon];};
 		if (!(_secweapon in _weapons) && _secweapon != "") then {_weapons = _weapons + [_secweapon];};
 		_magazines = magazines _body;
-		private ["_newBackpackType","_backpackWpn","_backpackMag"];
+		private ["_newBackpackType","_backpackWpn","_backpackMag","_hasBackPack"];
 		dayz_myBackpack = unitBackpack _body;
 		if (isNull (unitBackpack _body)) then {
 			_hasBackPack = false;

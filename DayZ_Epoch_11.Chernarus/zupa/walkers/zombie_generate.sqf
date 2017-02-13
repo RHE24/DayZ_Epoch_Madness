@@ -1,4 +1,4 @@
-private ["_position","_unitTypes","_radius","_method","_agent"];
+private ["_position","_unitTypes","_radius","_method","_agent","_loot"];
 
 _position = _this select 0;
 _doLoiter = _this select 1; // wander around
@@ -89,9 +89,15 @@ if ((dayz_spawnZombies < _maxControlledZombies) && (dayz_CurrentNearByZombies < 
 			_lootType = configFile >> "CfgVehicles" >> _type >> "zombieLoot";
 			if (isText _lootType) then {
 				_array = [];
-				{
-					_array set [count _array, _x select 0]
-				} forEach getArray (configFile >> "cfgLoot" >> getText(_lootType));
+				if (DZE_MissionLootTable) then {
+					{
+						_array set [count _array, _x select 0] 
+					} forEach getArray (missionConfigFile >> "cfgLoot" >> getText(_lootType));
+				} else {
+					{
+						_array set [count _array, _x select 0] 
+					} forEach getArray (configFile >> "cfgLoot" >> getText(_lootType));
+				};
 				if (count _array > 0) then {
 					_index = dayz_CLBase find getText(_lootType);
 					_weights = dayz_CLChances select _index;

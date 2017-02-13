@@ -29,6 +29,7 @@ class Category_647 {
 	class FHQ_rem_10Rnd_338Lapua_MSR_TD {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
 	class RH_20Rnd_762x51_hk417 {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
 	class RH_20Rnd_762x51_SD_hk417 {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
+	class 5Rnd_86x70_L115A1 {type = "trade_items";buy[] ={1000,"Coins"};sell[] ={500,"Coins"};};
 };
 class Category_614 {
 	class 20Rnd_762x51_DMR {
@@ -61,4 +62,5 @@ class Category_614 {
 	class FHQ_rem_10Rnd_338Lapua_MSR_TD {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
 	class RH_20Rnd_762x51_hk417 {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
 	class RH_20Rnd_762x51_SD_hk417 {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
+	class 5Rnd_86x70_L115A1 {type = "trade_items";buy[] ={1000,"Coins"};sell[] ={500,"Coins"};};
 };

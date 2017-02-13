@@ -13,7 +13,7 @@ if (!isDedicated) then {
 	PlotNearbyHumans 	= compile preprocessFileLineNumbers "plotManagement\plotNearbyHumans.sqf";
 	PlotAddFriend 		= compile preprocessFileLineNumbers "plotManagement\plotAddFriend.sqf";
 	PlotRemoveFriend 	= compile preprocessFileLineNumbers "plotManagement\plotRemoveFriend.sqf";
-	MaintainPlot    	= compile preprocessFileLineNumbers "plotManagement\maintain_areaSC.sqf";
+	MaintainPlot    	= compile preprocessFileLineNumbers "plotManagement\maintain_area.sqf";
 	PlotPreview    		= compile preprocessFileLineNumbers "plotManagement\plotToggleMarkers.sqf";
 	PlotObjects         = compile preprocessFileLineNumbers "plotManagement\plotObjects.sqf"; // NEW
 	/*Plot End*/

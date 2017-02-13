@@ -14,4 +14,6 @@ class m107 {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coin
 class m107_TWS_EP1 {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
 class FHQ_MSR_DESERT {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
 class FHQ_XM2010_DESERT {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class BAF_LRR_scoped {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
+class BAF_LRR_scoped_W {type = "trade_weapons";buy[] ={175000,"Coins"};sell[] ={100000,"Coins"};};
 };
