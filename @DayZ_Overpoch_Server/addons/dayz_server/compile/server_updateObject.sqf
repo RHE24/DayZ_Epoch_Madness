@@ -37,7 +37,7 @@ if ((typeName _objectID != "string") || (typeName _uid != "string")) then
 };
 // Epoch Admin Tools
 if (_object getVariable "MalSar" == 1) exitWith {};
-if (!_parachuteWest && !(locked _object)) then {
+if (!_parachuteWest and !(locked _object)) then {
 	if (_objectID == "0" && _uid == "0") then
 	{
 		_object_position = getPosATL _object;
@@ -59,17 +59,17 @@ _needUpdate = _object in needUpdate_objects;
 _object_position = {
 	private["_position","_worldspace","_fuel","_key"];
 		_position = getPosATL _object;
-		//Prescise Buidling edit
-		_worldspace = [getDir _object, _position] call AN_fnc_formatWorldspace;
-		//Old Edit
-		//_worldspace = [round(direction _object), _position];
-		_fuel = 0;
-		if (_object isKindOf "AllVehicles") then {
-			_fuel = fuel _object;
-		};
-		_key = format["CHILD:305:%1:%2:%3:",_objectID,_worldspace,_fuel];
-		//diag_log ("HIVE: WRITE: "+ str(_key));
-		_key call server_hiveWrite;
+	_worldspace = [
+		round(direction _object),
+		_position
+	];
+	_fuel = 0;
+	if (_object isKindOf "AllVehicles") then {
+		_fuel = fuel _object;
+	};
+	_key = format["CHILD:305:%1:%2:%3:", _objectID, _worldspace, _fuel];
+	//diag_log ("HIVE: WRITE: "+ str(_key));
+	_key call server_hiveWrite;
 };
 
 _object_inventory = {
@@ -139,19 +139,6 @@ _object_killed = {
 	//diag_log ("HIVE: WRITE: "+ str(_key));
 	_key call server_hiveWrite;
 	_object setVariable ["needUpdate",false,true];
-	if ((count _this) > 2) then {
-		_killer = _this select 2;
-		_charID = _object getVariable ['CharacterID','0'];
-		_objID 	= _object getVariable['ObjectID','0'];
-		_objUID	= _object getVariable['ObjectUID','0'];
-		_worldSpace = getPosATL _object;
-		if (getPlayerUID _killer != "") then {
-			_name = if (alive _killer) then { name _killer; } else { format["OBJECT %1", _killer]; };
-			diag_log format["Vehicle killed: Vehicle %1 (TYPE: %2), CharacterID: %3, ObjectID: %4, ObjectUID: %5, Position: %6, Killer: %7 (UID: %8)", _object, (typeOf _object), _charID, _objID, _objUID, _worldSpace, _name, (getPlayerUID _killer)];
-		} else {
-			diag_log format["Vehicle killed: Vehicle %1 (TYPE: %2), CharacterID: %3, ObjectID: %4, ObjectUID: %5, Position: %6", _object, (typeOf _object), _charID, _objID, _objUID, _worldSpace];
-		};
-	};
 };
 
 _object_repair = {
@@ -209,7 +196,7 @@ _object_vehicleKey = {
 	_object getVariable["bankMoney",0]
 	/*ZSC*/
     ];
-};
+	
 	/* Get the position of the Vehicle */
 	_position 	= getPosASL _object;
 	if !(surfaceIsWater _position) then {

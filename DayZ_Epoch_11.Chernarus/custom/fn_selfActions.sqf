@@ -1049,6 +1049,10 @@ if(_isModularDoor) then {
 	s_player_claimKey = -1;
 	player removeAction s_player_changeKey;
 	s_player_changeKey = -1;
+	player removeAction s_player_claimVehicle;
+	s_player_claimVehicle = -1;
+	player removeAction s_player_copyToKey;
+	s_player_copyToKey = -1;
 };
 
 

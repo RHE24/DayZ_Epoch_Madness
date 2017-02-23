@@ -30,7 +30,7 @@ dayz_MapArea = 12000; // Default = 10000
 dayz_maxLocalZombies = 30; // Default = 30 
 
 dayz_minpos = -1; 
-dayz_maxpos = 14000;
+dayz_maxpos = 16000;
 DZE_SelfTransfuse = true; // default value //allow self transufe
 DZE_StaticConstructionCount = 1; //reduce time to build only 1 step
 DZE_PlayerZed = false; //remove player chance to spawn as zed.
@@ -40,7 +40,7 @@ dayz_sellDistance_vehicle = 20;
 dayz_sellDistance_boat = 30;
 dayz_sellDistance_air = 40;
 
-dayz_maxAnimals = 8; // Default: 8
+dayz_maxAnimals = 5; // Default: 8
 dayz_tameDogs = true;
 DynamicVehicleDamageLow = 20; // Default: 0
 DynamicVehicleDamageHigh = 80; // Default: 100
@@ -72,7 +72,9 @@ progressLoadingScreen 0.2;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functions_med.sqf";	//Functions used by CLIENT for medical
 progressLoadingScreen 0.4;
 call compile preprocessFileLineNumbers "custom\compiles.sqf";	//Compile regular functions
+call compile preprocessFileLineNumbers "overwrites\click_actions\init.sqf";
 call compile preprocessFileLineNumbers "addons\bike\init.sqf";
+call compile preprocessFileLineNumbers "addons\suicide\init.sqf"; //Custom Suicide script right click pistol
 /*ZSC*/	
 call compile preprocessFileLineNumbers "ZSC\gold\ZSCinit.sqf";
 /*ZSC*/		
@@ -86,14 +88,9 @@ progressLoadingScreen 1.0;
 "filmic" setToneMappingParams [0.153, 0.357, 0.231, 0.1573, 0.011, 3.750, 6, 4]; setToneMapping "Filmic";
 
 if (isServer) then {
-	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf";
-	//Compile vehicle configs
-	
-	// Add trader citys
-	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf";
-	/*ZSC*/
-	_serverMonitor = 	[] execVM "\z\addons\dayz_server\system\server_monitor.sqf";
-	/*ZSC*/
+	call compile preprocessFileLineNumbers "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\dynamic_vehicle.sqf"; //Compile vehicle configs
+	_nil = [] execVM "\z\addons\dayz_server\missions\DayZ_Epoch_11.Chernarus\mission.sqf"; // Add trader citys
+	_serverMonitor = 	[] execVM "\z\addons\dayz_server\system\server_monitor.sqf"; /*ZSC*/
 };
 
 if (!isDedicated) then {
@@ -107,25 +104,23 @@ if (!isDedicated) then {
 	//Run the player monitor
 	_id = player addEventHandler ["Respawn", {_id = [] spawn player_death;}];
 	_playerMonitor = 	[] execVM "\z\addons\dayz_code\system\player_monitor.sqf";
+	_nil = [] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
 	execVM "spawn\start.sqf";
 	execVM "dzgm\init.sqf";
-	_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
-	["elevator"] execVM "elevator\elevator_init.sqf";
-	
 	/// Epoch Admin Tools
 if ( !((getPlayerUID player) in EAT_adminList) && !((getPlayerUID player) in EAT_modList)) then 
 {
   [] execVM "admintools\antihack\antihack.sqf"; // Epoch Antihack with bypass
 };
-
 	//Lights
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 
+_nil = [] execVM "custom\JAEM\EvacChopper_init.sqf";
 _nil = [] execVM "custom\remote\remote.sqf";
 _nil = [] execVM "DZAI_Client\dzai_initclient.sqf";
-	      execVM "ZSC\compiles\playerHud.sqf";
+	   [] execVM "ZSC\compiles\playerHud.sqf";
  	   [] execVM "service_point\service_point.sqf";
- 	   [] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
+	["elevator"] execVM "elevator\elevator_init.sqf";
 };
 
 //#include "\z\addons\dayz_code\system\REsec.sqf"
@@ -136,4 +131,3 @@ execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";
 
 #include "\z\addons\dayz_code\system\BIS_Effects\init.sqf"
 [] execVM "admintools\Activate.sqf"; // Epoch admin tools
-call compile preprocessFileLineNumbers "addons\suicide\init.sqf"; //Custom Suicide script right click pistol

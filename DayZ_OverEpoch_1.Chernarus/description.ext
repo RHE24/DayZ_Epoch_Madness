@@ -123,6 +123,7 @@ class DayZ_loadingScreen
 			colorText[] = {0,0,0,0};
 			colorBackground[] = {0,0,0,1};
 		};	
+		/*
 		class nicePic : RscPicture
 		{
 			style = 48 + 0x800; // ST_PICTURE + ST_KEEP_ASPECT_RATIO
@@ -132,6 +133,7 @@ class DayZ_loadingScreen
 			h = 0.4;
 			text = "custom\gui\dayz_logo_overpoch_ca.paa";
 		};
+		*/
 	};
 	class controls
 	{
@@ -168,14 +170,14 @@ class DayZ_loadingScreen
 #include "custom\extra_rc.hpp"
 class RscTitles
 {
+#include "dzgm\icons.hpp"	
 #include "ZSC\config\ZSChud.hpp"
-#include "dzgm\icons.hpp"
 };
+#include "dzgm\groupManagement.hpp"
 #include "ZSC\config\ZSCdialogs.hpp"
 #include "zupa\advancedTrading\advancedTrading.hpp"
 #include "custom\snap_pro\snappoints.hpp"
 #include "plotManagement\plotManagement.hpp"
-#include "dzgm\groupManagement.hpp"
 #include "spawn\class.hpp"
 #include "spawn\halo.hpp"
 #include "spawn\spawn.hpp"

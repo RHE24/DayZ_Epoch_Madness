@@ -13,10 +13,4 @@ class Category_478
 	class 32Rnd_40mm_GMG {type = "trade_items";buy[] ={10000,"Coins"};sell[] ={5000,"Coins"};}; 
 	class 48Rnd_40mm_MK19 {type = "trade_items";buy[] ={10000,"Coins"};sell[] ={5000,"Coins"};}; 
 	class 2000Rnd_762x51_M134 {type = "trade_items";buy[] ={10000,"Coins"};sell[] ={5000,"Coins"};};
-	class RH_7Rnd_50_AE {type = "trade_items";buy[] ={1000,"Coins"};sell[] ={500,"Coins"};};
-	class FHQ_rem_7Rnd_338Lapua_MSR_NT {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
-	class FHQ_rem_7Rnd_338Lapua_MSR_NT_SD {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
-	class FHQ_rem_10Rnd_338Lapua_MSR_T {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
-	class FHQ_rem_10Rnd_338Lapua_MSR_TS {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
-	class FHQ_rem_10Rnd_338Lapua_MSR_TD {type = "trade_items";buy[] ={5000,"Coins"};sell[] ={2500,"Coins"};};
 };

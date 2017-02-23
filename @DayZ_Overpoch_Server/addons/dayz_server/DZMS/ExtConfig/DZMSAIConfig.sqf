@@ -82,7 +82,8 @@ DZMSWeps0 = [
 "Remington870_lamp",
 "MP5A5",
 "MP5SD",
-"M4A3_CCO_EP1"
+"M4A3_CCO_EP1",
+"PMC_AS50_TWS"
 ];
 
 DZMSWeps1 = [
@@ -111,7 +112,8 @@ DZMSWeps1 = [
 "Sa58V_CCO_EP1",
 "M40A3",
 "Sa58P_EP1",
-"Sa58V_EP1"
+"Sa58V_EP1",
+"RH_hk416s"
 ];
 
 DZMSWeps2 = [
@@ -129,7 +131,8 @@ DZMSWeps2 = [
 "M14_EP1",
 "bizon_silenced",
 "DMR_DZ",
-"RPK_74"
+"RPK_74",
+"RH_hk417eotech"
 ];
 
 DZMSWeps3 = [
@@ -147,7 +150,8 @@ DZMSWeps3 = [
 "M14_EP1",
 "bizon_silenced",
 "DMR_DZ",
-"RPK_74"
+"RPK_74",
+"RH_hk417sdsp"
 ];
 
 /////////////////////////////////////////////////////////////

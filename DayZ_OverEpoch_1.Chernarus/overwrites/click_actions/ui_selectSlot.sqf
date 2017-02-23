@@ -86,9 +86,26 @@ if (_button == 1) then {
 		};
 	} forEach DZE_CLICK_ACTIONS;
 	//### END MODIFIED CODE: extra click actions
-	
-	
-	
+
+	 ////////////GROUP MANAGEMENT CHANGE START HERE/////////
+    
+    _erc_cfgActions = (missionConfigFile >> "ExtraRc" >> _item);
+    _erc_numActions = (count _erc_cfgActions);
+    if (isClass _erc_cfgActions) then {
+     for "_j" from 0 to (_erc_numActions - 1) do
+     {
+       _menu =  _parent displayCtrl (1600 + _j + _numActions);
+       _menu ctrlShow true;
+       _config =  (_erc_cfgActions select _j);
+       _text =  getText (_config >> "text");
+       _script =  getText (_config >> "script");
+       _height = _height + (0.025 * safezoneH);
+       uiNamespace setVariable ['uiControl', _control];
+       _menu ctrlSetText _text;
+       _menu ctrlSetEventHandler ["ButtonClick",_script];
+      };
+   };
+    //GROUP MANAGEMENT CHANGE END HERE//
 	
 	_pos set [3,_height];
 

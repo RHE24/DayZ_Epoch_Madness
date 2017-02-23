@@ -301,6 +301,8 @@ dayz_resetSelfActions = {
 	s_player_elevator_upgrade_stop = -1;
 	s_player_elevator_call = -1;
 	s_player_elevator_id = -1;
+	s_player_claimvehicle = -1;
+	s_player_copyToKey = -1;
 };
 call dayz_resetSelfActions;
 

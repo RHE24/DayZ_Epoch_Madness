@@ -9,7 +9,7 @@ if (isServer) exitWith {};
 DZAIC_radio = true;
 
 //Enables AI hostility to zombies. DZAI_zombieEnemy must be set 'true' in dzai_config.sqf.
-DZAIC_zombieEnemy = false;
+DZAIC_zombieEnemy = true;
 
 //Enables death messages to be displayed to players who kill AI units. DZAI_deathMessages must be set 'true' in dzai_config.sqf
 DZAIC_deathMessages = true;

@@ -48,14 +48,36 @@ class Mission
       "ussr_cheytac",
       "bb_mercenary",
       "frb",
-	  "goosuksf"
+      "goosuksf"
 	};
 	addOnsAuto[]=
 	{
 		"dayz_weapons",
 		"ca_modules_functions",
-		"warfarebuildings",
-		"chernarus"
+		"chernarus",
+		"gms_k98",
+		"RH_m14",
+		"FHQ_Remington",
+		"FHQ_Remington_ammo",
+		"FHQ_Remington_msr",
+		"FHQ_Remington_xm2010",
+		"FHQ_Remington_acr",
+		"FHQ_Remington_rsass",
+		"VILAS_WWP",
+		"VILAS_RW_Forces",
+		"VILAS_WWP_CO",
+		"VILAS_RW_Forces_CO",
+		"ddopp_taserpack",
+		"CSJ_GyroAC",
+		"JetSkiYanahuiAddon",
+		"smk_anims_lite",
+		"MicroAirVehicles",
+		"oz_is_objects",
+		"monaro",
+		"gsc_units_stalker_patch",
+		"american_law_enforcement",
+		"CYBP_Camels_Config",
+		"nissan_350z"
 	};
 	randomSeed=11171215;
 	class Intel

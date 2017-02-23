@@ -1,8 +1,8 @@
 
 LOG_CFG_lANG = "en"; 				/*  en = english , de = german , fr = french  */
-LOG_CFG_ALLOW_LOCKED = false;	 	/* allow to transport locked vehicles */
-LOG_CFG_ALLOW_CHAINING = false; 	/* allow chain towing  */
-LOG_CFG_ALLOW_GETIN = false; 		/* allow player to get into a towed / lifted object  */
+LOG_CFG_ALLOW_LOCKED = true;	 	/* allow to transport locked vehicles */
+LOG_CFG_ALLOW_CHAINING = true; 	/* allow chain towing  */
+LOG_CFG_ALLOW_GETIN = true; 		/* allow player to get into a towed / lifted object  */
 
 
 /*--------------------------------------------------------------------------------------------------------------
@@ -746,7 +746,17 @@ LOG_CFG_CANLIFT=[
 	"uh1h_tk_ep1",
 	"uh1y",
 	"uh1y_dze",
-	"uh60m_ep1_dze"
+	"uh60m_ep1_dze",
+	"ka60_pmc",
+	"ka60_gl_pmc",
+	"baf_merlin_hc3_d",
+	"ah64d",
+	"mi24_d",
+	"ka52",
+	"ka52black",
+	"mi17_rockets_ru",
+	"mi171sh_rockets_cz_ep1",
+	"aw159_lynx_baf"
 ];
 
 
@@ -1081,6 +1091,7 @@ LOG_CFG_ISLIFTABLE=[
 	"uh1h",
 	"uh1h_dze",
 	"uh1h_tk_ep1",
+	"UH1H_TK_GUE_EP1",
 	"uh1y",
 	"uh1y_dze",
 	"uh60m_ep1",
@@ -1145,5 +1156,15 @@ LOG_CFG_ISLIFTABLE=[
 	"zodiac",
 	"zsu_cdf",
 	"zsu_ins",
-	"zsu_tk_ep1"
+	"zsu_tk_ep1",
+	"ka60_pmc",
+	"ka60_gl_pmc",
+	"baf_merlin_hc3_d",
+	"ah64d",
+	"mi24_d",
+	"ka52",
+	"ka52black",
+	"mi17_rockets_ru",
+	"mi171sh_rockets_cz_ep1",
+	"aw159_lynx_baf"
 ];
