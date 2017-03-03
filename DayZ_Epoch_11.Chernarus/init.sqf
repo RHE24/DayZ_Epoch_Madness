@@ -15,16 +15,16 @@ dayz_previousID = 0;
 //disable greeting menu 
 player setVariable ["BIS_noCoreConversations", true];
 //disable radio messages to be heard and shown in the left lower corner of the screen
-enableRadio false;
+enableRadio true;
 // May prevent "how are you civillian?" messages from NPC
-enableSentences false;
+enableSentences true;
 
 // DayZ Epoch config
 spawnShoremode = 0; // Default = 1 (on shore)
 dayz_paraSpawn = false;
 spawnArea= 1500; // Default = 1500
 
-MaxVehicleLimit = 750; // Default = 50
+MaxVehicleLimit = 500; // Default = 50
 MaxDynamicDebris = 150; // Default = 100
 dayz_MapArea = 14000; // Default = 10000
 dayz_maxLocalZombies = 20; // Default = 30 
@@ -127,7 +127,7 @@ if ( !((getPlayerUID player) in EAT_adminList) && !((getPlayerUID player) in EAT
  	   [] execVM "custom\VehicleKeyChanger\VehicleKeyChanger_init.sqf";
 };
 
-#include "\z\addons\dayz_code\system\REsec.sqf"
+//#include "\z\addons\dayz_code\system\REsec.sqf"
 
 //Start Dynamic Weather
 execVM "\z\addons\dayz_code\external\DynamicWeatherEffects.sqf";

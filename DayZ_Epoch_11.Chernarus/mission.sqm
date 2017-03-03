@@ -1,30 +1,31 @@
 version=11;
 class Mission
 {
-	addOns[]=
+ addOns[]=
 	{
-		"chernarus",
-		"ca_modules_animals",
-		"dayz_anim",
-		"dayz_code",
-		"dayz_communityassets",
-		"dayz_weapons",
-		"dayz_equip",
-		"dayz_epoch",
-		"dayz_vehicles",
-		"cacharacters_pmc",
-		"ca_modules_functions",
-		"glt_m300t",
-		"pook_h13",
-		"csj_gyroac",
-		"map_eu",
-		"jetskiyanahuiaddon"
+	  "chernarus",
+      "ca_modules_animals",
+      "dayz_anim",
+      "dayz_code",
+      "dayz_communityassets",
+      "dayz_weapons",
+      "dayz_equip",
+      "dayz_epoch",
+      "dayz_vehicles",
+      "cacharacters_pmc",
+      "ca_modules_functions",
+      "glt_m300t",
+      "pook_h13",
+      "csj_gyroac",
+      "map_eu",
+      "jetskiyanahuiaddon"
 	};
 	addOnsAuto[]=
 	{
+		"chernarus",
 		"dayz_weapons",
-		"ca_modules_functions",
-		"chernarus"
+		"ca_modules_functions"
+		
 	};
 	randomSeed=11171215;
 	class Intel

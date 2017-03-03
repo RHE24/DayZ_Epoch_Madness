@@ -9,7 +9,7 @@ This is a project for my Private Arma2 DayZ_Epoch 1.0.5.1 server with several mo
 <li><b>Custom Suicide Scripts Right Click Actions Deploy Bike</b></li>
 <li><b>Custom Configured Wicked AI, DZMS, and DZAI</b></li>
 </ul>
-<b>This server is HARD! It's challenging and fun to play on but be fore warned you need friends to watch your back!</b>
+<b>This server is HARD! It's challenging and fun to play on but before warned you need friends to watch your back!</b>
 <p>
 The mods are a mess and all over the project. 
 In the future I will condense them down to give them a better flow 
