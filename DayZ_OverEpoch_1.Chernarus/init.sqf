@@ -72,13 +72,13 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functi
 progressLoadingScreen 0.4;
 call compile preprocessFileLineNumbers "custom\compiles.sqf";	//Compile regular functions
 call compile preprocessFileLineNumbers "overwrites\click_actions\init.sqf";
-call compile preprocessFileLineNumbers "addons\bike\init.sqf";
-call compile preprocessFileLineNumbers "addons\suicide\init.sqf"; //Custom Suicide script right click pistol
 /*ZSC*/	
 call compile preprocessFileLineNumbers "ZSC\gold\ZSCinit.sqf";
 /*ZSC*/		
 call compile preprocessFileLineNumbers "logistic\init.sqf";	
 progressLoadingScreen 0.5;
+call compile preprocessFileLineNumbers "addons\bike\init.sqf";
+call compile preprocessFileLineNumbers "addons\suicide\init.sqf"; //Custom Suicide script right click pistol
 call compile preprocessFileLineNumbers "server_traders.sqf";				//Compile trader configs
 call compile preprocessFileLineNumbers "admintools\config.sqf"; // Epoch admin Tools config file
 call compile preprocessFileLineNumbers "admintools\variables.sqf"; // Epoch admin Tools variables
