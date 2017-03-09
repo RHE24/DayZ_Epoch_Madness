@@ -24,13 +24,13 @@ spawnShoremode = 0; // Default = 1 (on shore)
 dayz_paraSpawn = false;
 spawnArea= 1500; // Default = 1500
 
-MaxVehicleLimit = 700; // Default = 50
-MaxDynamicDebris = 250; // Default = 100
-dayz_MapArea = 12000; // Default = 10000
+MaxVehicleLimit = 500; // Default = 50
+MaxDynamicDebris = 100; // Default = 100
+dayz_MapArea = 10000; // Default = 10000
 dayz_maxLocalZombies = 30; // Default = 30 
 
 dayz_minpos = -1; 
-dayz_maxpos = 16000;
+dayz_maxpos = 15000;
 DZE_SelfTransfuse = true; // default value //allow self transufe
 DZE_StaticConstructionCount = 1; //reduce time to build only 1 step
 DZE_PlayerZed = false; //remove player chance to spawn as zed.
@@ -41,7 +41,7 @@ dayz_sellDistance_boat = 30;
 dayz_sellDistance_air = 40;
 
 dayz_maxAnimals = 5; // Default: 8
-dayz_tameDogs = true;
+dayz_tameDogs = false;
 DynamicVehicleDamageLow = 20; // Default: 0
 DynamicVehicleDamageHigh = 80; // Default: 100
 
@@ -60,9 +60,8 @@ ELE_StopClass = "MetalFloor_Preview_DZ";
 DZE_ConfigTrader = true; 
 /*ZSC*/
 DZE_MissionLootTable = true;
-
-EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 dayz_fullMoonNights = true;
+EpochEvents = [["any","any","any","any",30,"crash_spawner"],["any","any","any","any",0,"crash_spawner"],["any","any","any","any",15,"supply_drop"]];
 
 //Load in compiled functions
 call compile preprocessFileLineNumbers "custom\variables.sqf";				//Initilize the Variables (IMPORTANT: Must happen very early)
@@ -120,7 +119,7 @@ _nil = [] execVM "custom\remote\remote.sqf";
 _nil = [] execVM "DZAI_Client\dzai_initclient.sqf";
 	   [] execVM "ZSC\compiles\playerHud.sqf";
  	   [] execVM "service_point\service_point.sqf";
-	["elevator"] execVM "elevator\elevator_init.sqf";
+["elevator"] execVM "elevator\elevator_init.sqf";
 };
 
 //#include "\z\addons\dayz_code\system\REsec.sqf"
