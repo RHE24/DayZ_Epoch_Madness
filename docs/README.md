@@ -7,7 +7,7 @@ This is a project for my Private Arma2 DayZ_Epoch 1.0.6.1 server with several mo
 <li><b>Several AI Mission Packages in one server! DZAI WAI and DZMS</b></li>
 <li><b>Custom Suicide Scripts Right Click Actions Deploy Anything Updated!</b></li>
 <li><b>Workshop Mod, Portables Mod, and Weed,Hemp and Smoking Mods!</b></li>
-<li><b>Many many more mods from these forum posts -> https://epochmod.com/forum/forum/123-a2-epoch-mods</b></li>
+<li><b>Many many more mods from these forum posts https://epochmod.com/forum/forum/123-a2-epoch-mods</b></li>
 </ul>
 
 <b>This server is HARD! It's challenging and fun to play on but before warned you need friends to watch your back!</b>
