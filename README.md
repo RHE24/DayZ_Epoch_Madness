@@ -1,5 +1,5 @@
-#DayZ Epoch Madness
-DayZ_Epoch 1.0.6.1 server with several mods customized!
+# DayZ Epoch Madness
+**DayZ_Epoch 1.0.6.1 server with several mods customized!**
 
 Since I started this project several months ago, around the release of Epoch 1.0.6 I was still hanging on to the old version 1.0.5.1. Now
 that Epoch 1.0.6.1C is upon us, I opted to start a fresh new PVE militarized server. This project has some of the best converted mods there
@@ -17,3 +17,4 @@ Again to all those in the community that spent countless hours working on there 
 nice to play around with and have fun with.
 
 Enjoy!
+_Michael Gallagher_
