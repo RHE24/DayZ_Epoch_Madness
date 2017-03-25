@@ -1,25 +1,26 @@
 # DayZ Epoch Madness
-This is a project for my Private Arma2 DayZ_Epoch 1.0.5.1 server with several mods customized!
+This is a project for my Private Arma2 DayZ_Epoch 1.0.6.1 server with several mods customized!
 <h4><b>Mods I have in this server working:</b></h4>
 <ul>
-<li><b>Single Currency 3.0 by Zupa</b></li>
-<li><b>Plot Management</b></li>
-<li><b>ESSV2 Custom Spawn points</b></li>
-<li><b>Snap Build Pro 1.4 with Build Vetors and Precise Building</b></li>
-<li><b>Custom Suicide Scripts Right Click Actions Deploy Bike</b></li>
-<li><b>Custom Configured Wicked AI, DZMS, and DZAI</b></li>
+<li><b>Single Currency Updated for 1.0.6.1</b></li>
+<li><b>ESSV3 Custom Spawn points</b></li>
+<li><b>Several AI Mission Packages in one server! DZAI WAI and DZMS</b></li>
+<li><b>Custom Suicide Scripts Right Click Actions Deploy Anything Updated!</b></li>
+<li><b>Workshop Mod, Portables Mod, and Weed,Hemp and Smoking Mods!</b></li>
+<li><b>Many many more mods from these forum posts -> <a href=https://epochmod.com/forum/forum/123-a2-epoch-mods/>A2 Epoch Mods</a>
 </ul>
 <b>This server is HARD! It's challenging and fun to play on but before warned you need friends to watch your back!</b>
 <p>
-The mods are a mess and all over the project. 
-In the future I will condense them down to give them a better flow 
-on a final release of these sever files.
-I took some of the best mods out there, with a lot of people focusing on updates
-for Epoch 1.0.6c and the latter. I took the best fixes of these mods for Epoch, back into Epoch 1.0.5.1.
-In my humble opinion, Epoch 1.0.6c is really more like the stand alone version of the game DayZ!
-The new patch for PC has really no wiggle room for some awesome mods that the community put countless hours into making just to have code and variables almost completely changed just so they can stay up with current releases of the Paid version of DayZ!</p>
+<b>DayZ_Epoch 1.0.6.1 server with several mods customized!</b>
 
-<p>Doing a little research on current Arma2 and Arma3 servers that are live with the most population in server demographics, Have mods like Coins single currency, Plot Management, Banking, AI, and many more. Thes mods are the key to getting more players playing populated servers and are fun to play on. Who want's to play a game thats annoying within 10 minutes. 
-I played on some of the new epoch 1.0.6c servers and to be honest the most populated ones are ones with modified mods coming from Epoch 1.0.5.1 forward. Doing a complete rewrite of code just to stay in line with current code changes, is just insane. By the way PC STAND ALONE DAYZ 1.8.8 WORKS JUST FINE WITH EPOCH 1.0.5.1! THATS WHAT I DON"T GET WHY CHANGE EPOCH THE WAY YOU DID!</p>
+Since I started this project several months ago, around the release of Epoch 1.0.6 I was still hanging on to the old version 1.0.5.1. Now that Epoch 1.0.6.1C is upon us, I opted to start a fresh new PVE militarized server. This project has some of the best converted mods there are in the community to date. I tried my best to be very careful on this to have no errors either client side or server side.
 
-Ok my rant is over. Enjoy!
+I enjoy figuring out mods for Epoch! It's become sort of a daily hobby for me. With the stand alone Dayz game and all the confusion some times it's hard to get through all the code when there are problems.
+
+This is a PC based Full server install all you have to do is download this edit the configs for the mods on the server and client side and your all good to go. I try my best to do as much testing on a clean server each time changes are made. So far the project has very minimal errors since switching over to Epoch 1.0.6.1 and to be honest it was easier to get this PVE militarized server up and running than the older version of the Epoch mod.
+
+Again to all those in the community that spent countless hours working on there perspective projects I thank you for giving all of us something nice to play around with and have fun with.
+
+Enjoy!</p> 
+
+<i>Michael Gallagher</i>
