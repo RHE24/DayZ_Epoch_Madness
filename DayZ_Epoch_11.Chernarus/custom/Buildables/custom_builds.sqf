@@ -10,7 +10,7 @@ Cleaned up a lot of old code that wasn't needed any more for this custom craftin
 Removed irrelevant variables from private block
 This file is called with zero parameters
 */
-private ["_helperColor","_objectHelper","_objectHelperDir","_objectHelperPos","_canDo","_HT_temp","_HM_temp","_location","_dir","_classname","_cancel","_reason","_isMedic","_dis","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_zheightchanged","_rotate","_zheightdirection","_isNear","_objHupDiff","_vehicle","_inVehicle","_requireplot","_objHDiff","_ownerPUID", "_playerUID"];
+private ["_helperColor","_objectHelper","_objectHelperDir","_objectHelperPos","_canDo","_HT_temp","_HM_temp","_location","_dir","_classname","_cancel","_reason","_isMedic","_dis","_tmpbuilt","_onLadder","_isWater","_require","_text","_offset","_IsNearPlot","_isOk","_location1","_location2","_counter","_position","_object","_canBuildOnPlot","_friendlies","_nearestPole","_ownerID","_findNearestPoles","_findNearestPole","_distance","_zheightchanged","_rotate","_zheightdirection","_isNear","_objHupDiff","_vehicle","_inVehicle","_requireplot","_objHDiff","_ownerPUID", "_playerUID","_isallowedunderground"];
  
  _AdminCraft=false;
  _PUID = getPlayerUID player;
@@ -133,10 +133,11 @@ if (_inVehicle) exitWith {dayz_actionInProgress = false; cutText [(localize "str
 if (_onLadder) exitWith {dayz_actionInProgress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
 if (player getVariable["combattimeout", 0] >= time) exitWith {dayz_actionInProgress = false; cutText [(localize "str_epoch_player_43"), "PLAIN DOWN"];};
 _playerUID = getPlayerUID player;
-_found=[_playerUID,"AX"] call KRON_StrInStr;
-if (_found) then {
-   _playerUID=[_playerUID] call KRON_convertPlayerUID;
-};
+//Very old code causing problems with errors and not needed for EPoch 1.0.6.1
+//_found=[_playerUID,"AX"] call KRON_StrInStr;
+//if (_found) then {
+ //  _playerUID=[_playerUID] call KRON_convertPlayerUID;
+//};
 if (!_hasTools) exitWith {dayz_actionInProgress = false; cutText [format["%1",_HT_temp], "PLAIN DOWN"];};
 if (!_hasMaterials) exitWith {dayz_actionInProgress = false; cutText [format["%1",_HM_temp], "PLAIN DOWN"];};
  
