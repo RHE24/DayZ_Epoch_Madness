@@ -2,6 +2,7 @@ GlobalPreviewVariable=0;
 
 private ["_dikCode","_handle"];
 _handled = false;
+_dikCode = -null; // just defining the variable having a variable in "private [context]" DOSE NOT DEFINE IT!
 
 // ESC
 if (_dikCode == 0x01) then {
