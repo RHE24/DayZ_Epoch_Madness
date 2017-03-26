@@ -48,7 +48,7 @@ if(isServer) then {
 		ai_static_useweapon			= true;	// Allows AI on static guns to have a loadout 	
 		ai_static_weapons			= ["KORD_high_TK_EP1","DSHKM_Ins","M2StaticMG"];	// static guns
 
-		ai_static_skills			= false;	// Allows you to set custom array for AI on static weapons. (true: On false: Off) 
+		ai_static_skills			= true;	// Allows you to set custom array for AI on static weapons. (true: On false: Off) 
 		ai_static_array				= [["aimingAccuracy",0.20],["aimingShake",0.70],["aimingSpeed",0.75],["endurance",1.00],["spotDistance",0.70],["spotTime",0.50],["courage",1.00],["reloadSpeed",1.00],["commanding",1.00],["general",1.00]];
 
 		ai_gear0					= [["ItemBandage","ItemBandage","ItemAntibiotic"],["ItemRadio","ItemMachete","ItemCrowbar"]];
@@ -71,7 +71,7 @@ if(isServer) then {
 		ai_special_skin				= ["Functionary1_EP1_DZ"];
 		ai_all_skin					= [ai_hero_skin,ai_bandit_skin,ai_special_skin];
 
-		ai_add_skin					= true;			// adds unit skin to inventory on death
+		ai_add_skin					= false;			// adds unit skin to inventory on death
 		
 		/* AI Cache Units */
 		ai_cache_units			= false;
@@ -133,16 +133,16 @@ if(isServer) then {
 		wai_kill_percent			= 30;								// percentage of AI players that must be killed at "crate" missions to be able to trigger completion
 
 		wai_high_value				= true;								// enable the possibility of finding a high value item (defined below crate_items_high_value) inside a crate
-		wai_high_value_chance		= 1;								// chance in percent you find above mentioned item
+		wai_high_value_chance		= 30;								// chance in percent you find above mentioned item
 
 		wai_enable_minefield		= true;								// enable minefields to better defend missions
 		wai_use_launchers			= true;								// add a rocket launcher to each spawned AI group
-		wai_remove_launcher			= true;								// remove rocket launcher from AI on death
+		wai_remove_launcher			= false;								// remove rocket launcher from AI on death
 
 		// Missions
 		wai_radio_announce			= true;								// Setting this to true will announce the missions to those that hold a radio only
-		wai_hero_limit				= 1;								// define how many hero missions can run at once
-		wai_bandit_limit			= 1;								// define how many bandit missions can run at once
+		wai_hero_limit				= 3;								// define how many hero missions can run at once
+		wai_bandit_limit			= 3;								// define how many bandit missions can run at once
 
 		wai_hero_missions			= [ 								// ["mission filename",% chance of picking this mission],Make sure the chances add up to 100,or it will not be accurate percentages
 										["patrol",10],
@@ -210,8 +210,8 @@ if(isServer) then {
 
 	/* STATIC MISSIONS CONFIG */
 
-		static_missions				= false;		// use static mission file
-		custom_per_world			= false;		// use a custom mission file per world
+		static_missions				= true;		// use static mission file
+		custom_per_world			= true;		// use a custom mission file per world
 
 	/* END STATIC MISSIONS CONFIG */
 

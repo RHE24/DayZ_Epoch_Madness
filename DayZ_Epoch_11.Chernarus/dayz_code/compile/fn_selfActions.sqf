@@ -258,7 +258,7 @@ if (!isNull _cursorTarget && !_inVehicle && !_isPZombie && (player distance _cur
 	_isDisallowRefuel = _typeOfCursorTarget in ["M240Nest_DZ","MMT_Civ","MMT_USMC","Old_bike_TK_CIV_EP1","Old_bike_TK_INS_EP1"];	
 	_isDog = (_cursorTarget isKindOf "Pastor" || _cursorTarget isKindOf "Fin");
 	// _isModular = _cursorTarget isKindOf "ModularItems"; Edited for workshop
-	_isModular = (_cursorTarget isKindOf "ModularItems") or ((typeOf _cursorTarget) in DZE_Workshop);
+	_isModular = (_cursorTarget isKindOf "ModularItems") or ((typeOf _cursorTarget) in DZE_Workshop) or ((typeOf _cursorTarget) in Custom_Buildables);
 	_isModularDoor = _typeOfCursorTarget in ["Land_DZE_WoodDoor","Land_DZE_LargeWoodDoor","Land_DZE_GarageWoodDoor","CinderWallDoor_DZ","CinderWallDoorSmall_DZ"];
 	_player_deleteBuild = false;
 	_player_lockUnlock_crtl = false;

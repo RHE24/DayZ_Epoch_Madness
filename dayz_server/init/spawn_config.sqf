@@ -39,8 +39,8 @@ spawn_level1 = spawn_level1 + spawn_level2 + spawn_level3;
 spawn_level2 = spawn_level2 + spawn_level3;
 
 spawn_private = [ // These are only visible to players in their respective spawn levels
-["VIP Base",[1607,7804,0],3,2500],
-["VIP Hideout",[12944,12767,0],3,2500]
+["VIP Base",[7044.19,9662.86,0],3,2500],
+["VIP Hideout",[7044.19,9662.86,0],3,2500]
 ];
 spawn_base = [
 	"76561197987495141", // Mike's Base
@@ -48,7 +48,7 @@ spawn_base = [
 	"0"
 ];
 spawn_bases = [
-	["Mike's base",[2300,15324,0]],
+	["Mike's base",[7044.19,9662.86,0]],
 	[],
 	[]
 ];

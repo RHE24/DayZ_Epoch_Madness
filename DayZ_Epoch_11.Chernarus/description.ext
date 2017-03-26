@@ -150,6 +150,10 @@ class RscTitles {
 #include "dayz_code\Configs\CfgServerTrader.hpp"
 //Zupas Single Currency Epoch 1061
 #include "\z\addons\dayz_code\Configs\RscDisplay\ZSCdefines.hpp"
+//Buildables Advance Alchemy
+#include "custom\Buildables\MT_Defines.hpp"
+#include "custom\Buildables\Crafting_Defines.hpp"
+#include "custom\Buildables\Crafting_Dialogs.hpp"
 //Single Currency Banking
 #include "dayz_code\configs\zscdialogs.hpp"
 #include "dayz_code\configs\zscATMdialogs.hpp"

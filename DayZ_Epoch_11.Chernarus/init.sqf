@@ -68,7 +68,7 @@ DZE_slowZombies = true; // Force zombies to always walk
 DZE_StaticConstructionCount = 0; // Steps required to build. If greater than 0 this applies to all objects.
 DZE_GodModeBase = true; // Make player built base objects indestructible
 DZE_requireplot = 1; // Require a plot pole to build  0 = Off, 1 = On
-DZE_PlotPole = [30,45]; // Radius owned by plot pole [Regular objects,Other plotpoles]. Difference between them is the minimum buffer between bases.
+DZE_PlotPole = [120,160]; // Radius owned by plot pole [Regular objects,Other plotpoles]. Difference between them is the minimum buffer between bases.
 DZE_BuildingLimit = 500; // Max number of built objects allowed in DZE_PlotPole radius
 DZE_SelfTransfuse = true; // Allow players to bloodbag themselves
 DZE_selfTransfuse_Values = [12000,2,30]; // [blood amount given, infection chance %, cooldown in seconds]
@@ -104,6 +104,7 @@ if (!isDedicated) then {
 initialized = false;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\variables.sqf";
 call compile preprocessFileLineNumbers "dayz_code\init\variables.sqf";
+call compile preprocessFileLineNumbers "custom\Buildables\variables.sqf";
 progressLoadingScreen 0.05;
 //call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\publicEH.sqf";
 call compile preprocessFileLineNumbers "dayz_code\init\publicEH.sqf";
@@ -112,6 +113,7 @@ call compile preprocessFileLineNumbers "\z\addons\dayz_code\medical\setup_functi
 progressLoadingScreen 0.15;
 call compile preprocessFileLineNumbers "\z\addons\dayz_code\init\compiles.sqf";
 call compile preprocessFileLineNumbers "dayz_code\init\compiles.sqf";
+call compile preprocessFileLineNumbers "custom\Buildables\Crafting_Compiles.sqf";
 call compile preprocessFileLineNumbers "addons\bike\init.sqf";
 if (_verCheck) then {
 	#include "DZE_Hotfix_1.0.6.1A\init\compiles.sqf"

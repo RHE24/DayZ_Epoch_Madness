@@ -3,12 +3,11 @@ private ["_messages","_timeout"];
 _messages = [
 	["DayZ Epoch Maddness", "Welcome "+(name player)],
 	["World", worldName],
-	["Teamspeak", "Dont Have One"],
-	["Website/Forums", "No Websites"],
+	["Website/Forums", "Vist us at http://dayz_epoch_madness.mikesepochmadness.club/<br /> This is were you can download the server files!"],
 	["Server Rules", "Duping, glitching or using any<br />exploit will result in a<br />permanent ban."],
 	["Server Rules", "No talking in side."],
 	["Server Rules", "Hackers will be banned permanently<br />Respect others"],
-	["News", "There is no News, it works!<br />Enjoy the server!<br />"]
+	["News", "Many Mods Portables,Workshop,Take Clothes,<br />Single Currency,WAI,DZMS,DZAI and it works!<br />Enjoy the server!<br />"]
 ];
  
 _timeout = 5;

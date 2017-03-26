@@ -746,7 +746,13 @@ LOG_CFG_CANLIFT=[
 	"uh1h_tk_ep1",
 	"uh1y",
 	"uh1y_dze",
-	"uh60m_ep1_dze"
+	"uh60m_ep1_dze",
+	"Ka60_pmc",
+	"Ka52Black",
+	"Mi171Sh_rockets_CZ_EP1",
+	"Mi24_D",
+	"AH64D_EP1",
+	"AH64D"
 ];
 
 
@@ -1145,5 +1151,28 @@ LOG_CFG_ISLIFTABLE=[
 	"zodiac",
 	"zsu_cdf",
 	"zsu_ins",
-	"zsu_tk_ep1"
+	"zsu_tk_ep1",
+	"USVehicleBox",
+	"TKVehicleBox_EP1",
+	"USBasicWeaponsBox",
+	"USSpecialWeaponsBox",
+	"USSpecialWeapons_EP1",
+	"SpecialWeaponsBox",
+	"TKSpecialWeapons_EP1",
+	"CZBasicWeapons_EP1",
+	"UNBasicWeapons_EP1",
+	"GuerillaCacheBox",
+	"USBasicAmmunitionBox",
+	"USLaunchersBox",
+	"USOrdnanceBox",
+	"USOrdnanceBox_EP1",
+	"USLaunchers_EP1",
+	"USBasicWeapons_EP1",
+	"USBasicAmmunitionBox_EP1",
+	"UNBasicAmmunitionBox_EP1",
+	"TKOrdnanceBox_EP1",
+	"TKLaunchers_EP1",
+	"TKBasicAmmunitionBox_EP1",
+	"GuerillaCacheBox_EP1",
+	"GERBasicWeapons_EP1"
 ];

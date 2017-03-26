@@ -32,8 +32,6 @@ DZE_portables = portables;
 
 DZE_safeVehicle = workshop + portables + ["ParachuteWest","ParachuteC"];
 
-DZE_maintainClasses = workshop +["ModularItems","DZE_Housebase","LightPole_DZ","BuiltItems","Generator_DZ","DZ_buildables","Plastic_Pole_EP1_DZ","Fence_corrugated_DZ","CanvasHut_DZ","ParkBench_DZ","MetalGate_DZ","StickFence_DZ","DesertCamoNet_DZ","ForestCamoNet_DZ","DesertLargeCamoNet_DZ","ForestLargeCamoNet_DZ","DeerStand_DZ","Scaffolding_DZ","FireBarrel_DZ","M240Nest_DZ"];
-
 //Player self-action handles
 dayz_resetSelfActions = {
 	s_player_equip_carry = -1;

@@ -21,5 +21,13 @@ DZE_CLICK_ACTIONS = [
     ["G17_DZ","Suicide","execVM 'custom\player_suicide.sqf';","true"],
     ["ItemKnife","Harvest the weed","execVM 'drugs\cuthemp.sqf';","true"],
     ["ItemKiloHemp","Smoke that shit","execVM 'custom\smokeweed\smokeweed.sqf';","true"],
-	["ItemMachete","Harvest the weed","execVM 'drugs\cuthemp.sqf';","true"]
+	["ItemMachete","Harvest the weed","execVM 'drugs\cuthemp.sqf';","true"],
+    ["ItemAmethyst","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Amethyst.sqf';","true"],
+    ["ItemCitrine","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Citrine.sqf';","true"],
+    ["ItemEmerald","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Emerald.sqf';","true"],
+    ["ItemObsidian","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Obsidian.sqf';","true"],
+    ["ItemRuby","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Ruby.sqf';","true"],
+    ["ItemSapphire","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Sapphire.sqf';","true"],
+    ["ItemTopaz","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Topaz.sqf';","true"],
+    ["ItemLightbulb","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Lights.sqf';","true"]
 ];

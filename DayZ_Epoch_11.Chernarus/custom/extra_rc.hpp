@@ -1,34 +1,34 @@
 class ExtraRc {
- 
-  class DZ_Backpack_EP1 {
+      
+class DZ_Backpack_EP1 {
      class Portabletablesaw {
         text = "PortableTableSaw";
         script = "execVM 'custom\portables\portabletablesaw.sqf'";
-     };    
+     };
      class info1 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
      };    
   };
-  class DZ_CivilBackpack_EP1 {
-  class Portablesurvivalkit {
+class DZ_CivilBackpack_EP1 {
+      class Portablesurvivalkit {
         text = "SurvivalKit";
         script = "execVM 'custom\portables\portablesurvivalkit.sqf'";
      };
      class info2 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };
   };
-  class DZ_GunBag_EP1 {
-  class Portabletablekiln {
+class DZ_GunBag_EP1 {
+      class Portabletablekiln {
         text = "PortableCleyKiln";
         script = "execVM 'custom\portables\portablecleykiln.sqf'";
      };
      class info3 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };
 };
 class DZ_Czech_Vest_Pouch {
   class Portablemilitary {
@@ -38,7 +38,7 @@ class DZ_Czech_Vest_Pouch {
      class info4 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };
 };
 class DZ_Patrol_Pack_EP1 {
   class Portablecammonet {
@@ -48,7 +48,7 @@ class DZ_Patrol_Pack_EP1 {
      class info5 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };
 };
 class DZ_Assault_Pack_EP1 {
   class Portablemedicalbox {
@@ -58,7 +58,7 @@ class DZ_Assault_Pack_EP1 {
      class info6 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };
 };
 class DZ_TerminalPack_EP1 {
   class Portablecommunications {
@@ -68,7 +68,7 @@ class DZ_TerminalPack_EP1 {
      class info7 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };  
 };
 class DZ_ALICE_Pack_EP1 {
   class Portableforge {
@@ -78,7 +78,7 @@ class DZ_ALICE_Pack_EP1 {
      class info8 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };
 };
 class DZ_TK_Assault_Pack_EP1 {
   class Portablehunting {
@@ -88,7 +88,7 @@ class DZ_TK_Assault_Pack_EP1 {
      class info9 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };  
 };
 class DZ_British_ACU {
   class Portablebomb {
@@ -98,6 +98,6 @@ class DZ_British_ACU {
      class info10 {
         text = "Readme First";
         script = "execVM 'custom\portables\backpackinfo.sqf'";
-     };    
+     };
+   };
 };
-}; 
