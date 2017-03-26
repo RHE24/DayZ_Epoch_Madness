@@ -768,7 +768,7 @@ if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then 
   player removeAction s_player_plot_boundary;
   s_player_plot_boundary = -1;
   player removeAction s_player_workshop;//workshop
-        s_player_workshop = -1;//workshop
+  s_player_workshop = -1;//workshop
  };
  	///End More workshop code 
 

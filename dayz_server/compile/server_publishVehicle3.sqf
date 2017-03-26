@@ -186,8 +186,9 @@ _key call server_hiveWrite;
 	
 	if (_action == "") then {
 		_message = format ["%1 (%2) upgraded %3 @%4 %5",_name,_playerUID,_class,_mgp,_location];
+		diag_log _message;
 	} else {
 		_message = format ["%1 (%2) %6 %3 @%4 %5",_name,_playerUID,_class,_mgp,_location,_action];
+		diag_log _message;
 	};
-	diag_log _message;
 };

@@ -146,6 +146,7 @@ dayz_resetSelfActions = {
 	s_player_removemtent = -1;
 	s_player_hospitalhero = -1;
 	s_player_managework = -1;
+	s_player_workshop = -1;
 };
 
 call dayz_resetSelfActions;
