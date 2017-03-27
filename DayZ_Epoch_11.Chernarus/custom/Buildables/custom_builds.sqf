@@ -133,11 +133,13 @@ if (_inVehicle) exitWith {dayz_actionInProgress = false; cutText [(localize "str
 if (_onLadder) exitWith {dayz_actionInProgress = false; cutText [localize "str_player_21", "PLAIN DOWN"];};
 if (player getVariable["combattimeout", 0] >= time) exitWith {dayz_actionInProgress = false; cutText [(localize "str_epoch_player_43"), "PLAIN DOWN"];};
 _playerUID = getPlayerUID player;
+
 //Very old code causing problems with errors and not needed for EPoch 1.0.6.1
 //_found=[_playerUID,"AX"] call KRON_StrInStr;
 //if (_found) then {
  //  _playerUID=[_playerUID] call KRON_convertPlayerUID;
 //};
+
 if (!_hasTools) exitWith {dayz_actionInProgress = false; cutText [format["%1",_HT_temp], "PLAIN DOWN"];};
 if (!_hasMaterials) exitWith {dayz_actionInProgress = false; cutText [format["%1",_HM_temp], "PLAIN DOWN"];};
  
