@@ -6,15 +6,29 @@ _name = getText(configFile >> "cfgVehicles" >> _type >> "displayName");
 _hitpoints = _vehicle call vehicle_getHitpoints;
 _player = player;
 
+
 {
     private ["_damage","_selection"];
-    _damage = [_vehicle,_x] call object_getHit;
+	_damage = [_vehicle,_x] call object_getHit;
+		if (_damage > 0) then {
+				private "_partName";
+				//change "HitPart" to " - Part" rather than complicated string replace
+				_partName = toArray _x;
+				_partName set [0,20];
+				_partName set [1,45];
+				_partName set [2,20];
+				_partName = toString _partName;
+				titleText [format["Repairing%1 ...", _partName], "PLAIN DOWN"];
+				
+				_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _x >> "name");				
+				_strH = "hit_" + (_selection);
+				_vehicle setHit[_selection,0];
+				_vehicle setVariable [_strH,0,true];
+			};
+	} forEach _hitpoints;
 
-    if (_damage > 0) then {
-		_selection = getText(configFile >> "cfgVehicles" >> _type >> "HitPoints" >> _x >> "name");
-		[_vehicle,_selection,0] call fnc_veh_setFixServer;
-	};
-} count _hitpoints;
+PVDZ_veh_Save = [_vehicle,"repair"]; 
+publicVariableServer "PVDZ_veh_Save";
 
 _vehicle setDamage 0;
 _vehicle setFuel 1;

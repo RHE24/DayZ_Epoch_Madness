@@ -72,9 +72,9 @@ DZE_PlotPole = [120,160]; // Radius owned by plot pole [Regular objects,Other pl
 DZE_BuildingLimit = 500; // Max number of built objects allowed in DZE_PlotPole radius
 DZE_SelfTransfuse = true; // Allow players to bloodbag themselves
 DZE_selfTransfuse_Values = [12000,2,30]; // [blood amount given, infection chance %, cooldown in seconds]
-MaxDynamicDebris = 250; // Max number of random road blocks to spawn around the map
-MaxVehicleLimit = 500; // Max number of random vehicles to spawn around the map
-spawnArea = 1500; // Distance around markers to find a safe spawn position
+MaxDynamicDebris = 150; // Max number of random road blocks to spawn around the map
+MaxVehicleLimit = 250; // Max number of random vehicles to spawn around the map
+spawnArea = 1400; // Distance around markers to find a safe spawn position
 spawnShoremode = 0; // Random spawn locations  1 = on shores, 0 = inland
 EpochUseEvents = true; //Enable event scheduler. Define custom scripts in dayz_server\modules to run on a schedule.
 EpochEvents = [["any","any","any","any",10,"weedfarm"],["any","any","any","any",15,"supply_drop"]];

@@ -18,12 +18,12 @@
 
 	
 	//Enable/Disable weather/time change menu. This may cause server to revert to mid-day on restart.
-	EAT_wtChanger = false;
+	EAT_wtChanger = true;
 
 
 	//This creates a log in your server\EpochAdminToolLogs\toolUsageLog.txt REQUIRES: EATadminLogger.dll
 		EAT_logMajorTool = true; //A major tool is a strong tool with high possibility for exploitation
-		EAT_logMinorTool = false;//A minor tool is a weak tool with low possibility for exploitation
+		EAT_logMinorTool = true;//A minor tool is a weak tool with low possibility for exploitation
 
 		
 /************** Safe Zone Variables *****************/
@@ -34,10 +34,10 @@
 	EAT_szPlotPoleZones = false; // NOT WORKING YET. Makes EVERY player plot pole area a safe zone
 	EAT_szAntiTheft = true; // Disable stealing from inventory while in zone (allows interaction with friend inventory)
 	EAT_szAiShield =true; // Remove AI in a radius around the zone
-	EAT_szAiDistance = 100; // Distance to remove AI from players in a zone
+	EAT_szAiDistance = 250; // Distance to remove AI from players in a zone
 	EAT_szZombieShield = true; // Remove zombies near players
 	EAT_szZombieDistance = 20; // Distance to remove zombies from player in the zone
-	EAT_szUseSpeedLimits = true; // Enforce a speed limit for vehicles to stop from pushing players out of zone
+	EAT_szUseSpeedLimits = false; // Enforce a speed limit for vehicles to stop from pushing players out of zone
 	EAT_szSpeedLimit = 35; // Max speed for vehicles inside the zones
 	EAT_szUseHint = true; // Use hints for messages? (will display at bottom of screen instead if false)
 	EAT_szAdminWeapon = true; // Allow admins to use weapons in the safe zones? (True = yes)
@@ -48,7 +48,8 @@
 		// Cherno zones that can't be auto detected:
 		[[1606.6443,289.70795,7803.5156],100], // Bandit
 		[[12944.227,210.19823,12766.889],100], // Hero
-		[[12060.471,158.85699,12638.533],100] // Aircraft (NO COMMA ON LAST LINE)
+		[[12060.471,158.85699,12638.533],100],// Aircraft 
+		[[7044.19,0,9662.86],100] // Mike's Base (NO COMMA ON LAST LINE)
 		// ALWAYS LEAVE OFF THE LAST "," OR THIS WILL BREAK
 	];
 
@@ -70,7 +71,7 @@
 	EAT_adminBuild = false;
 	
 	// Change the maximum build distance for placable base items
-	DZE_buildMaxMoveDistance = 20;
+	DZE_buildMaxMoveDistance = 120;
 
 	
 	

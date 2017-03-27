@@ -20,7 +20,7 @@ if(isNil "enhancedESP2") then {enhancedESP2 = true;} else {enhancedESP2 = !enhan
 if (isNil "AddPlayersToMap") then {AddPlayersToMap = true;};
 if (isNil "AddDeadPlayersToMap") then {AddDeadPlayersToMap = false;};
 if (isNil "AddZombieToMap") then {AddZombieToMap = false;};
-if (isNil "AddUnlockedVehiclesToMap") then {AddUnlockedVehiclesToMap = true;};
+if (isNil "AddUnlockedVehiclesToMap") then {AddUnlockedVehiclesToMap = false;};
 if (isNil "AddLockedVehiclesToMap") then {AddLockedVehiclesToMap = true;};
 if (isNil "AddPlotPoleToMap") then {AddPlotPoleToMap = false;};
 if (isNil "AddStorageToMap") then {AddStorageToMap = false;};
