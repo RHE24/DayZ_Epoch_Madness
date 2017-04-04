@@ -14,4 +14,5 @@ if (!isDedicated) then {
 	player_updateGui = compile preprocessFileLineNumbers "dayz_code\compile\player_updateGui.sqf";
 	//Workshop
 	player_removeObject = compile preprocessFileLineNumbers "custom\workshop\serverfunction\remove.sqf";
+	//Workshop
 };

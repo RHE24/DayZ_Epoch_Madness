@@ -144,26 +144,29 @@ class RscTitles {
 		};
 	};
 };
-#include "custom\extra_rc.hpp"
+//Default Mission Entries
 #include "dayz_code\gui\description.hpp"
 #include "\z\addons\dayz_code\Configs\CfgLoot\CfgLoot.hpp"
 #include "dayz_code\Configs\CfgServerTrader.hpp"
+
 //Zupas Single Currency Epoch 1061
 #include "\z\addons\dayz_code\Configs\RscDisplay\ZSCdefines.hpp"
+
 //Buildables Advance Alchemy
 #include "custom\Buildables\MT_Defines.hpp"
 #include "custom\Buildables\Crafting_Defines.hpp"
 #include "custom\Buildables\Crafting_Dialogs.hpp"
+
 //Single Currency Banking
 #include "dayz_code\configs\zscdialogs.hpp"
 #include "dayz_code\configs\zscATMdialogs.hpp"
+
 //Admintools
 #include "admintools\dialog.hpp"
+
 //ESSV3 Spawn
 #include "spawn\dialogs.hpp"
+
 //Workshop
 #include "custom\workshop\hpp\des.hpp"
 #include "custom\workshop\hpp\workshopmenu.hpp"
-//portables
-#include "custom\portables\definesportables.hpp"
-#include "custom\portables\portablemenus.hpp"

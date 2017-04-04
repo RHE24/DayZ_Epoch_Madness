@@ -12,7 +12,7 @@ dayz_antihack = 0; // DayZ Antihack / 1 = enabled // 0 = disabled
 dayz_REsec = 0; // DayZ RE Security / 1 = enabled // 0 = disabled
 dayz_enableRules = true; //Enables a nice little news/rules feed on player login (make sure to keep the lists quick).
 dayz_quickSwitch = true; //Turns on forced animation for weapon switch. (hotkeys 1,2,3) False = enable animations, True = disable animations
-dayz_POIs = false; //Adds Point of Interest map additions (negatively impacts FPS)
+dayz_POIs = true; //Adds Point of Interest map additions (negatively impacts FPS)
 dayz_infectiousWaterholes = true; //Randomly adds some bodies, graves and wrecks by ponds (negatively impacts FPS)
 dayz_ForcefullmoonNights = true; // Forces night time to be full moon.
 dayz_randomMaxFuelAmount = 500; //Puts a random amount of fuel in all fuel stations.
@@ -28,7 +28,7 @@ if (dayz_presets == "Custom") then {
 	dayz_spawncarepkgs_clutterCutter = 0; //0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
 	dayz_spawnCrashSite_clutterCutter = 0;	// heli crash options 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass
 	dayz_spawnInfectedSite_clutterCutter = 0; // infected base spawn 0 = loot hidden in grass, 1 = loot lifted, 2 = no grass 
-	dayz_bleedingeffect = 1; //1 = blood on the ground (negatively impacts FPS), 2 = partical effect, 3 = both
+	dayz_bleedingeffect = 3; //1 = blood on the ground (negatively impacts FPS), 2 = partical effect, 3 = both
 	dayz_OpenTarget_TimerTicks = 60 * 10; //how long can a player be freely attacked for after attacking someone unprovoked
 	dayz_nutritionValuesSystem = true; //true, Enables nutrition system, false, disables nutrition system.
 	dayz_classicBloodBagSystem = true; // disable blood types system and use the single classic ItemBloodbag
@@ -140,9 +140,6 @@ if (isServer) then {
 	//WORKSHOP SERVER ELECTRIFY FENCES
 	[] execVM 'custom\workshop\serverfunction\server_electrify_init.sqf';
 	//
-	//portables clay	
-	[] execVM 'custom\portables\init_clay.sqf';
-	//
 	execVM "\z\addons\dayz_server\traders\chernarus11.sqf"; //Add trader agents
 	execVM "\z\addons\dayz_server\bankTraders\chernarus.sqf"; //Add banking agents
 	//Get the server to setup what waterholes are going to be infected and then broadcast to everyone.
@@ -156,7 +153,7 @@ if (!isDedicated) then {
     // Epoch Admin Tools
     [] execVM "admintools\antihack\antihack.sqf"; // Epoch Antihack with bypass
 	[] execVM "scripts\service_points\service_point.sqf"; // New Service Points for Epoch1061
-	
+	_nul = [] execVM "DZAI_Client\dzai_initclient.sqf"; //DZAI Client Files Radio Messages
 	
 	if (toLower(worldName) == "chernarus") then {
 		diag_log "WARNING: Clearing annoying benches from Chernarus";
@@ -169,6 +166,7 @@ if (!isDedicated) then {
 	execFSM "\z\addons\dayz_code\system\player_monitor.fsm";
 	//[false,12] execVM "\z\addons\dayz_code\compile\local_lights_init.sqf";
 	if (DZE_R3F_WEIGHT) then {execVM "\z\addons\dayz_code\external\R3F_Realism\R3F_Realism_Init.sqf";};
+	execVM "custom\rpgfix.sqf";
 	call compile preprocessFileLineNumbers "scripts\zsc\zscInit.sqf";
 	call compile preprocessFileLineNumbers "scripts\zsc\zscATMInit.sqf";
 	execVM "scripts\zsc\playerHud.sqf";
@@ -181,3 +179,4 @@ if (!isDedicated) then {
 };
 [] execVM "admintools\Activate.sqf"; // Epoch admin tools
 [] execVM "admineventsclientside\init_adminevents.sqf";
+call compile preprocessFileLineNumbers "addons\suicide\init.sqf";
