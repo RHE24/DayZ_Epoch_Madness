@@ -951,19 +951,7 @@ if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then 
 		player removeAction s_player_fillgen;
 		s_player_fillgen = -1;
 	};
-	_clothesTaken = _cursorTarget getVariable["clothesTaken",false];
-	_isZombie = _cursorTarget isKindOf "zZombie_base"; // Add this here now since epoch 1.0.6 doesn't initialize this where this will go.
-
-	// Take clothes by Zabn
-	if (_isMan && {!_isAlive} && {!_isZombie} && {!_clothesTaken}) then {
-		if (s_player_clothes < 0) then {
-		s_player_clothes = player addAction [format["<t color='#0096ff'>Take Clothes</t>"], "scripts\takeClothes.sqf",_cursorTarget,0, false,true];
-	};
-	} else {
-		player removeAction s_player_clothes;
-		s_player_clothes = -1;
-	};
-
+	
 	//Towing with tow truck
 	/*
 	if(_typeOfCursorTarget == "TOW_DZE") then {
@@ -1174,6 +1162,9 @@ if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then 
 	s_player_fillfuel = -1;
 	player removeAction s_player_studybody;
 	s_player_studybody = -1;
+	//remove clothes
+	player removeAction s_clothes;
+	s_clothes = -1;
 	//fuel
 	player removeAction s_player_fillfuel210;
 	s_player_fillfuel210 = -1;
@@ -1267,9 +1258,6 @@ if ((_cursorTarget isKindOf "Plastic_Pole_EP1_DZ") && {speed player <= 1}) then 
 	s_player_fuelauto2 = -1;
 	player removeAction s_player_manageDoor;
 	s_player_manageDoor = -1;
-	// Take Clothes by Zabn
-	player removeAction s_player_clothes;
-	s_player_clothes = -1;
 	player removeAction s_player_pipe;
 	s_player_pipe = -1;
 

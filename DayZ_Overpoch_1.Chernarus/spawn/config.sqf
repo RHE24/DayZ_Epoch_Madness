@@ -8,13 +8,13 @@
 class_selection = true; //Enable class selection dialog
 #define START_ITEMS "ItemBandage",4,"ItemPainkiller","ItemWaterbottle","FoodPistachio"
 class_public = [ // These are visible to anyone on the server
-	[(localize "str_playerstats_bandit")+" Lvl1","Bandit1_DZ","BanditW1_DZ",[START_ITEMS,"17Rnd_9x19_glock17",2],["G17_DZ"],"",[],[],0,-5000,50000,"MeleeHatchet"],
-	[(localize "str_playerstats_bandit")+" Lvl2","Bandit1_DZ","BanditW1_DZ",[START_ITEMS,"17Rnd_9x19_glock17",3,"ItemMorphine"],["G17_DZ"],"DZ_Assault_Pack_EP1",[],[],0,-10000,50000,"MeleeHatchet"],
-	[(localize "str_playerstats_bandit")+" Lvl3","Bandit1_DZ","BanditW1_DZ",[START_ITEMS,"17Rnd_9x19_glock17",4,"ItemMorphine"],["G17_DZ"],"DZ_TK_Assault_Pack_EP1",[],[],0,-15000,50000,"MeleeHatchet"],
-	[(localize "str_playerstats_hero")+" Lvl1",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"17Rnd_9x19_glock17",2],["G17_DZ"],"",[],[],0,5000,50000,"MeleeHatchet"],
-	[(localize "str_playerstats_hero")+" Lvl2",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"17Rnd_9x19_glock17",3,"ItemMorphine"],["G17_DZ"],"DZ_Assault_Pack_EP1",[],[],0,10000,50000,"MeleeHatchet"],
-	[(localize "str_playerstats_hero")+" Lvl3",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"17Rnd_9x19_glock17",4,"ItemMorphine"],["G17_DZ"],"DZ_LargeGunBag_EP1",[],[],0,15000,75000,"MeleeHatchet"],
-	[localize "str_playerstats_survivor","Survivor2_DZ","SurvivorW2_DZ",[START_ITEMS,"17Rnd_9x19_glock17",2],["G17_DZ"],"",[],[],0,0,0]
+	[(localize "str_playerstats_bandit")+" Lvl1","Bandit1_DZ","BanditW1_DZ",[START_ITEMS,"17Rnd_9x19_glock17",2],["G17_SD_MFL_DZ"],"",[],[],0,-5000,50000,"MeleeHatchet"],
+	[(localize "str_playerstats_bandit")+" Lvl2","Bandit1_DZ","BanditW1_DZ",[START_ITEMS,"17Rnd_9x19_glock17",3,"ItemMorphine"],["G17_SD_MFL_DZ"],"DZ_Assault_Pack_EP1",[],[],0,-10000,50000,"MeleeHatchet"],
+	[(localize "str_playerstats_bandit")+" Lvl3","Bandit1_DZ","BanditW1_DZ",[START_ITEMS,"17Rnd_9x19_glock17",4,"ItemMorphine"],["G17_SD_MFL_DZ"],"DZ_TK_Assault_Pack_EP1",[],[],0,-15000,50000,"MeleeHatchet"],
+	[(localize "str_playerstats_hero")+" Lvl1",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"17Rnd_9x19_glock17",2],["G17_SD_MFL_DZ"],"",[],[],0,5000,50000,"MeleeHatchet"],
+	[(localize "str_playerstats_hero")+" Lvl2",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"17Rnd_9x19_glock17",3,"ItemMorphine"],["G17_SD_MFL_DZ"],"DZ_Assault_Pack_EP1",[],[],0,10000,50000,"MeleeHatchet"],
+	[(localize "str_playerstats_hero")+" Lvl3",if (class_epoch) then {"Soldier_Sniper_PMC_DZ"} else {"Survivor3_DZ"},"SurvivorW2_DZ",[START_ITEMS,"17Rnd_9x19_glock17",4,"ItemMorphine"],["G17_SD_MFL_DZ"],"DZ_LargeGunBag_EP1",[],[],0,15000,75000,"MeleeHatchet"],
+	[localize "str_playerstats_survivor","Survivor2_DZ","SurvivorW2_DZ",[START_ITEMS,"17Rnd_9x19_glock17",2],["G17_SD_MFL_DZ"],"",[],[],0,0,0]
 ];
 
 halo_selection = true; // Enable HALO selection dialog

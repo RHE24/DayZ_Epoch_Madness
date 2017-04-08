@@ -1,3 +1,0 @@
-disableSerialization;
-
-createDialog "workshopmenu";

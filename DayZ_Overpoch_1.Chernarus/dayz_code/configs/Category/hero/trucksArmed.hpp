@@ -21,13 +21,13 @@ class Category_479 {
 	};
 	class ArmoredSUV_PMC_DZE {
 		type = "trade_any_vehicle";
-		buy[] = {200000,"worth"};
+		buy[] = {400000,"worth"};
 		sell[] = {100000,"worth"};
 	};
 	class ArmoredSUV_PMC {
 		type = "trade_any_vehicle";
-		buy[] = {400000,"worth"};
-		sell[] = {200000,"worth"};
+		buy[] = {300000,"worth"};
+		sell[] = {100000,"worth"};
 	};
 	class Ural_ZU23_CDF {
 		type = "trade_any_vehicle";

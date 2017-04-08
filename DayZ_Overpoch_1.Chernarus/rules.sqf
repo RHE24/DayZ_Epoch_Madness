@@ -3,7 +3,7 @@ private ["_messages","_timeout"];
 _messages = [
 	["DayZ Epoch Maddness", "Welcome "+(name player)],
 	["World", worldName],
-	["Website/Forums", "Vist us at http://dayz_epoch_madness.mikesepochmadness.club/<br /> This is were you can download the server files!"],
+	["Website/Forums", "Vist us at http://mikesgallagher.com<br /> This is were you can download the server files!"],
 	["Server Rules", "Duping, glitching or using any<br />exploit will result in a<br />permanent ban."],
 	["Server Rules", "No talking in side."],
 	["Server Rules", "Hackers will be banned permanently<br />Respect others"],

@@ -9,10 +9,10 @@ if (!isDedicated) then {
 	//Custom fn_sefactions
 	fnc_usec_selfactions = compile preprocessFileLineNumbers "dayz_code\compile\fn_selfActions.sqf";
 	//Custom Keyboard commands
-	DZ_KeyDown_EH = compile preprocessFileLineNumbers "dayz_code\compile\keyboard.sqf"; 	//ChangePathToSuitYourServer
+	DZ_KeyDown_EH = compile preprocessFileLineNumbers "dayz_code\compile\keyboard.sqf";
 	//Custom Player GUI Blood,Temprature,and Medical Icons moved
 	player_updateGui = compile preprocessFileLineNumbers "dayz_code\compile\player_updateGui.sqf";
 	//Workshop
 	player_removeObject = compile preprocessFileLineNumbers "custom\workshop\serverfunction\remove.sqf";
-	//Workshop
 };
+fnc_veh_handleDam = compile preprocessFileLineNumbers "dayz_code\compile\veh_handleDam.sqf";
