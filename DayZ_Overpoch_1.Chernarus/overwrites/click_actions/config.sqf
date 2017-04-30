@@ -29,5 +29,6 @@ DZE_CLICK_ACTIONS = [
     ["ItemRuby","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Ruby.sqf';","true"],
     ["ItemSapphire","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Sapphire.sqf';","true"],
     ["ItemTopaz","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Topaz.sqf';","true"],
-    ["ItemLightbulb","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Lights.sqf';","true"]
+    ["ItemLightbulb","Start Crafting!","closeDialog 0;createDialog 'Advanced_Crafting';execVM 'Custom\Buildables\Lights.sqf';","true"],
+    ["ItemMap","Identify Keys","execVM 'scripts\locateVehicle\locateVehicle.sqf';","true"]
 ];

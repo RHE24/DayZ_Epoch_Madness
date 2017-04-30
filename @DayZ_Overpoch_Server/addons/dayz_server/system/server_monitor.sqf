@@ -378,6 +378,7 @@ diag_log format["Total Number of spawn locations %1", actualSpawnMarkerCount];
 
 if (isDedicated) then {endLoadingScreen;};
 [] ExecVM "\z\addons\dayz_server\WAI\init.sqf";
+[] ExecVM "\z\addons\dayz_server\DZMS\DZMSInit.sqf";
 [] call compile preprocessFileLineNumbers "\z\addons\dayz_server\DZAI\init\dzai_initserver.sqf";
 allowConnection = true;
 sm_done = true;
@@ -424,7 +425,7 @@ publicVariable "sm_done";
 };
 
 //Points of interest
-//[] execVM "\z\addons\dayz_server\compile\server_spawnInfectedCamps.sqf"; //Adds random spawned camps in the woods with corpses and loot tents (negatively impacts FPS)
+[] execVM "\z\addons\dayz_server\compile\server_spawnInfectedCamps.sqf"; //Adds random spawned camps in the woods with corpses and loot tents (negatively impacts FPS)
 [] execVM "\z\addons\dayz_server\compile\server_spawnCarePackages.sqf";
 [] execVM "\z\addons\dayz_server\compile\server_spawnCrashSites.sqf";
 
